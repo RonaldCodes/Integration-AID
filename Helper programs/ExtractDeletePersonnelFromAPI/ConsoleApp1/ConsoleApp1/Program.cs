@@ -35,7 +35,7 @@ namespace ExtractPersonnelfromApi
                 var persondId = "228/" + person.Id.Substring(person.Id.LastIndexOf('/') + 1);
                 var info = new List<FileLine>
                         {
-                    
+
                                Wrap(persondId,"Id"),
                                Wrap("228","ClientId"),
                                Wrap(person.FirstName, "First Name"),
@@ -60,8 +60,12 @@ namespace ExtractPersonnelfromApi
                         };
                 Append(fileName, info);
 
+                //Api call to delete from API:
+                //var DeletePerson = api.ExecuteRequest(new DeletePersonnel(api.Context, person.Id));
+
             }
         }
+
         private static double GetNumberOfPages(Api api, int take)
         {
             return Math.Ceiling((api.ExecuteRequest(new LoadPersonnels(api.Context, null, 1, 0)).Data.Total) / take);
