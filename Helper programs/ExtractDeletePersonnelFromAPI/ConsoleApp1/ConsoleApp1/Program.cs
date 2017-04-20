@@ -12,7 +12,7 @@ namespace ExtractPersonnelfromApi
         static void Main(string[] args)
         {
             var fileName = "People206.csv"; //Write to a csv 
-            var api = Login("9408065009082", "yase191!", "206");
+            var api = Login("9408065009082", "yase191!", "366");
             var take = 500;
             var NumberOfPages = GetNumberOfPages(api, take);
 
@@ -32,36 +32,36 @@ namespace ExtractPersonnelfromApi
             var people = api.ExecuteRequest(new LoadPersonnels(api.Context, null, take, skip)).Data.Data;
             foreach (var person in people)
             {
-                var persondId = "228/" + person.Id.Substring(person.Id.LastIndexOf('/') + 1);
-                var info = new List<FileLine>
-                        {
+                //var persondId = "228/" + person.Id.Substring(person.Id.LastIndexOf('/') + 1);
+                //var info = new List<FileLine>
+                //        {
 
-                               Wrap(persondId,"Id"),
-                               Wrap("228","ClientId"),
-                               Wrap(person.FirstName, "First Name"),
-                               Wrap(person.LastName, "Surname"),
-                               Wrap(person.Gender, "Gender"),
-                               Wrap(person.IdentityNumber,"Id No"),
-                               Wrap(person.PrimaryContactNo,"Mobile"),
-                               Wrap(person.SecondaryContactNo,"Number"),
-                               Wrap(person.Nature,"Nature"),
-                               Wrap(person.Status,"Status"),
-                               Wrap(person.Type,"Type"),
-                               Wrap(person.ReferenceNo,"Internal Ref"),
-                               Wrap(person.DefaultVehicleRegistrationNumber,"Default RegNo"),
-                               Wrap(person.Nationality, "Nationality"),
-                               Wrap(person.Tag, "Tag"),
-                               Wrap(person.CreatedOn, "CreatedOn"),
-                               Wrap(person.NickName, "NickName"),
-                               Wrap(person.LicenseExpiryDate, "LicenseExpiryDate"),
-                               Wrap(person.LicenseId, "LicenseId"),
-                               Wrap(person.LicenseType, "LicenseType"),
+                //               Wrap(persondId,"Id"),
+                //               Wrap("228","ClientId"),
+                //               Wrap(person.FirstName, "First Name"),
+                //               Wrap(person.LastName, "Surname"),
+                //               Wrap(person.Gender, "Gender"),
+                //               Wrap(person.IdentityNumber,"Id No"),
+                //               Wrap(person.PrimaryContactNo,"Mobile"),
+                //               Wrap(person.SecondaryContactNo,"Number"),
+                //               Wrap(person.Nature,"Nature"),
+                //               Wrap(person.Status,"Status"),
+                //               Wrap(person.Type,"Type"),
+                //               Wrap(person.ReferenceNo,"Internal Ref"),
+                //               Wrap(person.DefaultVehicleRegistrationNumber,"Default RegNo"),
+                //               Wrap(person.Nationality, "Nationality"),
+                //               Wrap(person.Tag, "Tag"),
+                //               Wrap(person.CreatedOn, "CreatedOn"),
+                //               Wrap(person.NickName, "NickName"),
+                //               Wrap(person.LicenseExpiryDate, "LicenseExpiryDate"),
+                //               Wrap(person.LicenseId, "LicenseId"),
+                //               Wrap(person.LicenseType, "LicenseType"),
 
-                        };
-                Append(fileName, info);
+                //        };
+                //Append(fileName, info);
 
                 //Api call to delete from API:
-                //var DeletePerson = api.ExecuteRequest(new DeletePersonnel(api.Context, person.Id));
+                var DeletePerson = api.ExecuteRequest(new DeletePersonnel(api.Context, person.Id));
 
             }
         }
