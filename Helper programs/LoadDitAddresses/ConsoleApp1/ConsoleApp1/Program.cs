@@ -6,7 +6,7 @@ using Trackmatic.Rest.Core.Requests;
 using Trackmatic.Rest.Dit.Requests;
 using static ExtractPersonnelfromApi.Utility;
 
-namespace ExtractPersonnelfromApi
+namespace ExtractDitAddresses
 {
     class Program
     {
