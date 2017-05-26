@@ -5,6 +5,7 @@ using System.IO;
 using Trackmatic.Rest.Core;
 using Trackmatic.Rest.Core.Model;
 using Trackmatic.Rest.Dit.Model;
+using Trackmatic.Rest.Dit.Requests;
 
 namespace UploadDitAddress
 {
@@ -48,7 +49,7 @@ namespace UploadDitAddress
 
                     var address = new DitAddress
                     {
-                        Id = $"{clientId}/{cell2}",
+                        Id = $"{clientId}/{cell1}",
                         ClientId = clientId,
                         Address = new StructuredAddress
                         {
@@ -58,15 +59,19 @@ namespace UploadDitAddress
                             PostalCode = RemoveZaf(cell13),
                         },
                         Name = cell3,
-                        CorrelationId = cell1,
-                        Reference = $"{cell7}-{cell0}",
+                        Reference = $"{cell1}",
                         ZoneReference = cell7,
+                        Status = EDitStatus.New,
                         Coordinates = new OCoord
                         {
                             Longitude = Convert.ToDouble(cell9),
                             Latitude = Convert.ToDouble(cell8),
-                        },
 
+                        },
+                         BusinessInfo = new DitBusinessInfo
+                         {
+                              RegistrationNumber = cell2,
+                         }
                     };
                     list.Add(address);
                 }
