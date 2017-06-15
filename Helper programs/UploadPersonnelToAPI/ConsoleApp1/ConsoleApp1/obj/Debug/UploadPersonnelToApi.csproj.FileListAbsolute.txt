@@ -70,3 +70,4 @@ C:\Data\Projects\Integration-AID\Helper programs\UploadPersonnelToAPI\ConsoleApp
 C:\Data\Projects\Integration-AID\Helper programs\UploadPersonnelToAPI\ConsoleApp1\ConsoleApp1\obj\Debug\UploadPersonnelToApi.csprojResolveAssemblyReference.cache
 C:\Data\Projects\Integration-AID\Helper programs\UploadPersonnelToAPI\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
 C:\Data\Projects\Integration-AID\Helper programs\UploadPersonnelToAPI\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Data\Projects\Integration-AID\Helper programs\UploadPersonnelToAPI\ConsoleApp1\ConsoleApp1\bin\Debug\Files\PersonnelTemplate.xlsx
