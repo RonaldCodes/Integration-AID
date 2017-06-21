@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Serialization;
 
 namespace CSharpToXML
@@ -30,8 +27,8 @@ namespace CSharpToXML
                         CustomerName = "Spar",
                         MaximumStopTime = new TimeSpan(0, 10, 0),
                         CellNo = "0113647894",
-                        CustomerCode = "",
-                        Email = "",
+                        CustomerCode = "440336",
+                        Email = "example@email.co.za",
                         CustomerReference = "spar5165516",
                         IsOnceOffDelivery = false,
                         Address = new Address
@@ -58,15 +55,35 @@ namespace CSharpToXML
                                 InternalReference = "pickingSlip81",
                                 ExpectedDeliveryDate = "5/30/2017",
                                 IsCashOnDelivery = "No",
-                                Unit = "",
+                                Unit = "2",
                                 Weight = "12",
-                                VolumetricMass = "",
+                                VolumetricMass = "43",
                                 Pieces = "10",
-                                Pallets = "",
-                                SpecialInstructions = "",
+                                Pallets = "1",
+                                SpecialInstructions = "Please handle with care",
                                 AmountIncl = "300",
                                 AmountExcl = "258",
-
+                                HandlingUnit = new List<HandlingUnit>
+                                {
+                                   new HandlingUnit()
+                                   {
+                                        CustomerReference = "CustRef101",
+                                        Barcode = "102103659",
+                                        Description = "Box of Feta",
+                                        VolumetricMass = 6,
+                                        Volume = 12,
+                                        Weight = 15,
+                                        Quantity = 150,
+                                        Dimensions = new HandlingUnitDimensions()
+                                        {
+                                             Height = 12,
+                                             Length = 8,
+                                             Width = 10
+                                        },
+                                        UnitOfMeasure = EUnitOfMeasure.Box,
+                                         
+                                   }
+                                }
                             }
                         }
                     }

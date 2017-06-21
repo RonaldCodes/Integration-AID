@@ -45,6 +45,8 @@
     <Compile Include="Actions.cs" />
     <Compile Include="Address.cs" />
     <Compile Include="Customer.cs" />
+    <Compile Include="HandlingUnit.cs" />
+    <Compile Include="HandlingUnitDimensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Route.cs" />

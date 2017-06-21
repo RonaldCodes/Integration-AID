@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSharpToXML
 {
@@ -22,5 +19,7 @@ namespace CSharpToXML
         public string SpecialInstructions { get; set; }
         public string AmountIncl { get; set; }
         public string AmountExcl { get; set; }
+
+        public List<HandlingUnit> HandlingUnit { get; set; }
     }
 }
