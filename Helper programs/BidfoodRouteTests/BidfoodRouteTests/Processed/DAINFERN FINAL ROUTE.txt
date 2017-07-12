@@ -1,0 +1,2 @@
+Entity Id: CHE181 doesn't exist has or no ship-to location
+Entity Id: CAF446 doesn't exist has or no ship-to location

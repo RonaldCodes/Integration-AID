@@ -1,0 +1,3 @@
+Entity Id: HAR112 doesn't exist has or no ship-to location
+Entity Id: GRA011 doesn't exist has or no ship-to location
+Entity Id: SER108 doesn't exist has or no ship-to location

@@ -1,0 +1,10 @@
+Entity Id: REE207 doesn't exist has or no ship-to location
+Entity Id: GOU060 doesn't exist has or no ship-to location
+Entity Id: GOU061 doesn't exist has or no ship-to location
+Entity Id: SAN462 doesn't exist has or no ship-to location
+Entity Id: COF686 doesn't exist has or no ship-to location
+Entity Id: FED4274 doesn't exist has or no ship-to location
+Entity Id: FED4538 doesn't exist has or no ship-to location
+Entity Id: OLI088 doesn't exist has or no ship-to location
+Entity Id: SER132 doesn't exist has or no ship-to location
+Entity Id: FOU018 doesn't exist has or no ship-to location

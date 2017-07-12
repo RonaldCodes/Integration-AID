@@ -1,0 +1,6 @@
+Entity Id: WEL163 doesn't exist has or no ship-to location
+Entity Id: CUS007 doesn't exist has or no ship-to location
+Entity Id: FRE17 doesn't exist has or no ship-to location
+Entity Id: PRE213 doesn't exist has or no ship-to location
+Entity Id: PIC276 doesn't exist has or no ship-to location
+Entity Id: FAT014 doesn't exist has or no ship-to location

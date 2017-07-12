@@ -1,0 +1,44 @@
+ACC #,CUSTOMER NAME ,SEQ 
+COL007,COLLIERY TRAINING COLLEGE (PTY) LTD                              ,1
+TAK020,TAKE 2 PIZZA COMPANY                                             ,2
+PIC279,PICK N PAY REYNO RIDGE                                           ,3
+FOR006,SUN 1 HOTELS -  PROPRIETARY                                      ,4
+FED4384,FEDICS - EDEN PARK RETIREMENT VILLAGE                            ,5
+HYG001,HYGIENIC MEAT CO                                                 ,6
+BAK012,BAKING CREATIONS                                                 ,7
+YUM010,YUMMY CHICKEN KLIPFONTEIN                                        ,8
+BLU177,BLUE LAGOON                                                      ,9
+GOG002,GO GO BURGERS TAKE AWAY                                          ,10
+MEA033,MEAT DISCOUNTERS                                                 ,11
+HUN030,HUNTSMAN                                                         ,12
+CAM067,CAMBRIGE TUCK SHOP                                               ,13
+JAV008,JAVA JUNCTION                                                    ,14
+BLU190,THE BLUE ROOM                                                    ,15
+PRO128,PROTEA HOTEL HIGHVELD                                            ,16
+RAK002,RAKU LOUNGE                                                      ,17
+EQU014,FEDICS - REEF - CROSS ATLANTIC                                   ,18
+REE032,FEDICS - REEF - RAND CARBIDE                                     ,19
+GEN010,GENERAAL HERTZOGS KOSHUIS                                        ,20
+PRO168,PROTEA HOTEL WITBANK                                             ,21
+POP001,POPEYS                                                           ,22
+Id,Location Name,Sequence,Route Name,Latitude,Longtitude
+7258440f-e625-4d4a-9bf6-6a75f47f53b5,Colliery Training College,1,WITBANK 3 FINAL ROUTE,-25.9086975410336,29.2513453960419
+TAK020,Reyno Ridge Centre,2,WITBANK 3 FINAL ROUTE,-25.908417,29.25046
+FOR006,Formula 1 Hotel Witbank,3,WITBANK 3 FINAL ROUTE,-25.9144129090594,29.2334872484207
+FED1401,Eden Park Retirement Village,4,WITBANK 3 FINAL ROUTE,-25.9024921086113,29.2371055483818
+HYG001,Midland Centre,5,WITBANK 3 FINAL ROUTE,-25.9003350894799,29.2363786697388
+BAK012,Baking Creations,6,WITBANK 3 FINAL ROUTE,-25.9000141872909,29.2353647947311
+BLU177,Highveld Centre - Witbank,7,WITBANK 3 FINAL ROUTE,-25.8988825778703,29.2323768138886
+GOG002,Rand Centre,8,WITBANK 3 FINAL ROUTE,-25.8945587165577,29.2273074388504
+MEA033,Meat Discounters,9,WITBANK 3 FINAL ROUTE,-25.8934101642682,29.2268434166908
+HUN030,Southfork Centre,10,WITBANK 3 FINAL ROUTE,-25.8935983731821,29.2302471399307
+CAM067,Cambridge Tuck Shop,11,WITBANK 3 FINAL ROUTE,-25.8921650823546,29.2531263828278
+JAV008,New Life Church,12,WITBANK 3 FINAL ROUTE,-25.8790474912739,29.2403268814087
+BLU190,The Blue room,13,WITBANK 3 FINAL ROUTE,-25.88306786446,29.2303732037544
+PRO128,Protea Hotel Highveld,14,WITBANK 3 FINAL ROUTE,-25.8750366344773,29.2339807748795
+RAK002,Raku Lounge,15,WITBANK 3 FINAL ROUTE,-25.8565882217438,29.2564115525602
+EQU014,Equality Reef Cross Atlantic,16,WITBANK 3 FINAL ROUTE,-25.8549272060775,29.2371618747711
+REE032,Rand Carbide Limited,17,WITBANK 3 FINAL ROUTE,-25.8627667180969,29.2228496074677
+GEN010,Generaal Hertzog (Koshuis),18,WITBANK 3 FINAL ROUTE,-25.8703788500902,29.2187243700027
+PRO168,Protea Hotel Witbank,19,WITBANK 3 FINAL ROUTE,-25.8796845823451,29.218767285347
+POP001,Popeys*,20,WITBANK 3 FINAL ROUTE,-25.875749,29.210296

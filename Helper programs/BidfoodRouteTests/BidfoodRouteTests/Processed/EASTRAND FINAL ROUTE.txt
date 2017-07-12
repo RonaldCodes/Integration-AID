@@ -1,0 +1,9 @@
+Entity Id: FED4767 doesn't exist has or no ship-to location
+Entity Id: DAD008 doesn't exist has or no ship-to location
+Entity Id: GAL101 doesn't exist has or no ship-to location
+Entity Id: CAP409 doesn't exist has or no ship-to location
+Entity Id: TSA038 doesn't exist has or no ship-to location
+Entity Id: CAP184 doesn't exist has or no ship-to location
+Entity Id: MIL068 doesn't exist has or no ship-to location
+Entity Id:  doesn't exist has or no ship-to location
+Entity Id:  doesn't exist has or no ship-to location

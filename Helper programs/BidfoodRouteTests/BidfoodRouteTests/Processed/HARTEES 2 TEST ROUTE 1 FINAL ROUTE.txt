@@ -1,0 +1,6 @@
+Entity Id: NEC003 doesn't exist has or no ship-to location
+Entity Id: CGA213 doesn't exist has or no ship-to location
+Entity Id: LAU021 doesn't exist has or no ship-to location
+Entity Id: LAE048 doesn't exist has or no ship-to location
+Entity Id: THAT124 doesn't exist has or no ship-to location
+Entity Id: IN2002 doesn't exist has or no ship-to location

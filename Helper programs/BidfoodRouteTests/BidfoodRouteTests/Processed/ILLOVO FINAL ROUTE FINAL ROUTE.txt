@@ -1,0 +1,2 @@
+Entity Id: SAN191 doesn't exist has or no ship-to location
+Entity Id: SAN461 doesn't exist has or no ship-to location
