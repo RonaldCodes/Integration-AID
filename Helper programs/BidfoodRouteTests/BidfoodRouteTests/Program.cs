@@ -49,7 +49,9 @@ namespace BidfoodRouteTests
                     var superRoute = CreateRoute(RouteName);
                     model.Route = superRoute;
 
-                    foreach (var route in routeLines)
+                    //Un-Comment when ordering by 4th column then by the 3rd column
+                    //var orderedRouteList = routeLines.OrderBy(x => x.GetRound()).ThenBy(x => x.GetSeq());
+                    foreach (var route in routeLines) // orderedRouteList)
                     {
                         var deco = CreateDeco(route);
                         var entity = LookupEntity(route.GetAccNumber());
