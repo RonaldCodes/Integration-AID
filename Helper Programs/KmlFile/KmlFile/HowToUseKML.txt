@@ -1,0 +1,7 @@
+﻿1)Uses NuGet package PM> Install-Package SharpKml.Core -ProjectName "YOUR PROJECT NAME"
+
+2)See layers of KML http://help.arcgis.com/en/webapi/silverlight/apiref/ESRI.ArcGIS.Client.Toolkit.DataSources~ESRI.ArcGIS.Client.Toolkit.DataSources.KmlLayer.html
+
+3)Each tag can be treated as an object
+
+4)use to load actual KML to see the zones http://www.gpsvisualizer.com/map?output_home

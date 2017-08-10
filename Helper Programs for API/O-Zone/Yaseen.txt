@@ -1,0 +1,56 @@
+private static Kml _kml;
+
+        static void Main(string[] args)
+        {
+            //FileStream fs = new FileStream("C:\\Users\\Yaseenh\\Desktop\\New folder\\Fibrehoods.kml", FileMode.Open);
+            //string filePath = "C:\\Users\\Yaseenh\\Desktop\\New folder\\TestFile.csv";
+
+            TextReader reader = File.OpenText("C:\\Users\\Yaseenh\\Desktop\\New folder\\Fibrehoods2.kml");
+            KmlFile file = KmlFile.Load(reader);
+            _kml = file.Root as Kml;
+
+            var api = new Api("https://rest.trackmatic.co.za/api/v1", "110", "9408065009082");
+
+            api.Authenticate("hKDa-@cv");
+
+            if (_kml != null)
+            {
+
+                foreach (var polygon in _kml.Flatten().OfType<Polygon>())
+                {
+
+          
+                    var name = ((Placemark)polygon.Parent).Name;
+                    Console.WriteLine(name + "\n");
+
+                    var coorD = polygon.OuterBoundary.LinearRing.Coordinates;
+                    foreach (var item in coorD)
+                    {
+                      
+                        var latitude = item.Latitude;
+                        var longitude = item.Longitude;
+                        var coordinates = string.Format("{0},{1},{2}", "", longitude, latitude);
+                        Console.WriteLine(coordinates);
+
+                        var z = new OZone
+                        {
+         
+                            ClientId = "110",
+                            Name = name,
+                            Coords = new List<OCoord>
+                        {
+                                 new OCoord { Longitude = longitude , Latitude = -26.127909408704}
+                                
+                         },
+                            Id = $"110/{Guid.NewGuid()}",
+                            Shape = EZoneShape.Polygon,
+                            Type = EOZoneType.Stay
+                        };
+                        api.ExecuteRequest(new SaveZone(api.Context, z));
+
+                    }
+
+                    break; //Take out to get all coordinates
+                }
+            }
+        }
