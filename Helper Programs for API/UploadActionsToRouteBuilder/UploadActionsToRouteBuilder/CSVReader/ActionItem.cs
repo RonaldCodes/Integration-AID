@@ -8,7 +8,7 @@ namespace Agent.Csv
     public class ActionItem
     {
         private readonly Line _source;
-        private const int ExpectedLength = 35;
+        private const int ExpectedLength = 33;
 
         public ActionItem(Line source)
         {
@@ -31,22 +31,18 @@ namespace Agent.Csv
         {
             return _source.GetStringByIndex(Constants.CustomerName);
         }
-
         public string GetCustomerReference()
         {
             return _source.GetStringByIndex(Constants.CustomerReference);
         }
-
         public string GetInternalReference()
         {
             return _source.GetStringByIndex(Constants.InternalReference);
         }
-
         public string GetActionTypeName()
         {
             return _source.GetStringByIndex(Constants.ActionTypeName);
         }
-        
         public DateTime GetExpectedDeliveryDate()
         {
             return _source.GetDateTimeByIndex(Constants.ExpectedDeliveryDate);
@@ -55,37 +51,30 @@ namespace Agent.Csv
         {
             return _source.GetStringByIndex(Constants.Instructions);
         }
-
         public string GetSellToName()
         {
             return _source.GetStringByIndex(Constants.SellToName);
         }
-
         public string GetSellToReference()
         {
             return _source.GetStringByIndex(Constants.SellToReference);
         }
-
         public string GetIsAdhoc()
         {
             return _source.GetStringByIndex(Constants.IsAdhoc);
         }
-
         public int GetMeasure()
         {
             return _source.GetIntByIndex(Constants.Measure);
         }
-
         public string GetRestrictions()
         {
             return _source.GetStringByIndex(Constants.Restrictions);
         }
-
         public string GetShipToName()
         {
             return _source.GetStringByIndex(Constants.ShipToName);
         }
-
         public string GetShipToReference()
         {
             return _source.GetStringByIndex(Constants.ShipToReference);
@@ -107,7 +96,6 @@ namespace Agent.Csv
                 }
                 return 0.0;
         }
-
         public double GetShipToLongitude()
         {
             var longitude = _source.GetStringByIndex(Constants.ShipToLongitude);
@@ -132,7 +120,6 @@ namespace Agent.Csv
         {
             return _source.GetStringByIndex(Constants.UnitNo);
         }
-
         public string GetBuildingName()
         {
             return _source.GetStringByIndex(Constants.BuildingName);
