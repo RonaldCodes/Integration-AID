@@ -25,5 +25,14 @@
                 PassWord = "!J5GrvNP"
             };
         }
+        public SiteData JLife()
+        {
+            return new SiteData()
+            {
+                ClientId = "399",
+                UserName = "9408065009082",
+                PassWord = "yase191!"
+            };
+        }
     }
 }

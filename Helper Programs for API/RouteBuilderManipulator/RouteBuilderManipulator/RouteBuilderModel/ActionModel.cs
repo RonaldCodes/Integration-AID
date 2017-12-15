@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Trackmatic.Rest.Core;
 
@@ -19,6 +20,12 @@ namespace RouteBuilderManipulator
             {
                 var deleteAction = api.ExecuteRequest(new Trackmatic.Rest.Planning.Requests.DeleteAction(api.Context, actionId));
             }
+        }
+
+        public List<Trackmatic.Rest.Planning.Model.Action> RetrivePlannedActions(Api api, int take, int skip, DateTime startDate, DateTime endDate)
+        {
+            var actionsWithZones = api.ExecuteRequest(new Trackmatic.Rest.Planning.Requests.SearchPlannedActionsWithZones(api.Context, "", take, skip, startDate, endDate)).Data.Data.ToList();
+            return actionsWithZones;
         }
     }
 }
