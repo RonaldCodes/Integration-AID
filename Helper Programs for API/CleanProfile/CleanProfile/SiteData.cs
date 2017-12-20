@@ -20,5 +20,14 @@ namespace CleanProfile
                 PassWord = "tb!AEs8B"
             };
         }
+        public SiteData BidfoodWesternCape()
+        {
+            return new SiteData()
+            {
+                Id = "422",
+                UserName = "9408065009082",
+                PassWord = "yase191!"
+            };
+        }
     }
 }

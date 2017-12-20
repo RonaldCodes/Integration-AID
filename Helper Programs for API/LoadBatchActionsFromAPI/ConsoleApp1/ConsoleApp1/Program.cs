@@ -15,11 +15,11 @@ namespace ExtractBatchActions
         public static List<ActionLine> _actionsLines = new List<ActionLine>();
         static void Main(string[] args)
         {
-            var clientId = "403";
+            var clientId = "224";
             var api = Login("9408065009082", "yase191!", clientId);
 
-            var start = new DateTime(2017,09,25,00,00,00);
-            var end = new DateTime(2017, 10, 01, 23, 59, 59);
+            var start = new DateTime(2017,10,25,00,00,00);
+            var end = new DateTime(2017, 10, 25, 23, 59, 59);
 
             var batch = new BatchQuery<Action>(new BatchOptions
             {
@@ -33,10 +33,13 @@ namespace ExtractBatchActions
 
         public static void WriteToFile(Api api, Action action)
         {
+            var list = new List<string>();
             var fileName = "Actions.csv";
-            var data = $"{action.Id},{action.Reference},{action.Nature},{action.CustomerReference},{action.ActionTypeId},{action.Status}," +
-                $"{action.RouteId},{action.CreatedOn},{action.ReceivedOn},{action.SellTo},{action.ShipTo},{action.ShipTo.Address}";
-            File.AppendAllLines(fileName, new[] { data });
+            //var data = $"{action.Id},{action.Reference},{action.Nature},{action.CustomerReference},{action.ActionTypeId},{action.Status}," +
+            //    $"{action.RouteId},{action.CreatedOn},{action.ReceivedOn},{action.SellTo},{action.ShipTo},{action.ShipTo.Address}";
+            var data = $"{action.ActionTypeName}";
+            list.Add(data);
+            //File.AppendAllLines(fileName, new[] { data });
         }
 
         public static void UpdateAction(Api api, Action action)

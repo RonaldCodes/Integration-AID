@@ -2,6 +2,7 @@
 using Trackmatic.Rest.Core;
 using Trackmatic.Rest.Routing.Requests;
 using Trackmatic.Rest.Routing.Model;
+using System.Collections.Generic;
 
 namespace CleanProfile
 {
@@ -24,6 +25,16 @@ namespace CleanProfile
                 Console.WriteLine(route.Id);
             }
         }
+
+        public void DeleteRoutesById(Api api, List<string> routesToDelete)
+        { 
+            foreach (var routeId in routesToDelete)
+            {
+                api.ExecuteRequest(new DeleteRouteRequest(api.Context, routeId));
+                Console.WriteLine(routeId);
+            }
+        }
+
         //public void DeleteRoutes(Api api)
         //{
         //    var batch = new BatchQuery<Route>(new BatchOptions
