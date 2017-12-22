@@ -1,0 +1,224 @@
+ADMIN for the remote!
+13.67.136.122
+trackmatic
+trackmatic191!
+Port : 22
+
+TestUser for SFTP!
+13.67.136.122
+TestUser
+test191!
+Port : 22
+
+##########################################################################
+####  STEP #0 = Install Cygwin and OpenSSH Files
+##########################################################################
+1) Create a new VM on Azure
+
+2) Once the VM is created  go to its network settings and within the Inbound Port rules (Network security rule)
+   add port 22 of type SSH priority 1010 TCP protocol.
+	Note you can remote into the VM by logging into azure then going to the VM and pressing connect button.
+	This should download a RDP file to which you can connect to
+
+3) Check if the port is open using (https://www.yougetsignal.com/tools/open-ports/) by entering 
+	IP of the VM and port 22
+	Note you may have to remote into the VM and add this to you firewall
+	Do this by control panel> Windows firewall> Inbound Rules> New Rule> port ...etc name is SFTP
+
+4) Install files as instructed in this video by remoting into the VM (https://www.youtube.com/watch?v=295V_0BDrc0)
+
+5) Download Cygwin from (https://www.cygwin.com/)
+
+6) Note always run all terminas as Administrator when doing the 
+   instructions below
+   
+7) Download files without install to a desktop folder, make sure to select skip on all openSSH and SSL files
+
+8) Run the setup again this time to install (C drive). Make sure all openSSH and SSL files are selected
+
+##########################################################################
+####  STEP #1 = Create a Windows Users, Groups and User Directories
+##########################################################################
+1) For Example, create windows users sftpuser01, sftpuser02, sftpuser03
+2) For Example, create windows group sftp_group
+3) Place users in the sftp_group
+4) Under windows create the Folder C:\SFTP_ROOT
+5) Create a folder for each user, in my case its
+   a) C:\SFTP_ROOT\sftpuser01
+   b) C:\SFTP_ROOT\sftpuser02
+   c) C:\SFTP_ROOT\sftpuser03
+
+
+
+##########################################################################
+####  STEP #2 = Open Cygwin Terminal Shell install SSH
+##########################################################################
+1) In the Cygwin Terminal Shell type
+   export CYGWIN='ntsec tty'
+   chmod 0755 /var
+   ssh-host-config
+
+Answers to the questions when prompted for from ssh-host-config
+===================================================================
+a) should strictmodes be used?  no
+b) Should privilege separation be used? yes
+c) New local account 'sshd'?  yes
+d) do you want to install sshd as a service? yes
+e) Enter the value of CYGWIN daemon?  sshd
+f) do you want to use a different name? no
+g) Create a new privileged user account 'cyg_server'?  yes (Password: trackmatic191!)
+
+
+
+##########################################################################
+####  STEP #3 = Create password and Group file
+##########################################################################
+1) Create the Password File and Group File, in the CygWin Termina type
+   mkgroup > /etc/group 
+   #for local users 
+   mkpasswd -cl > /etc/passwd 
+   #for domain users
+   #mkpasswd -d > /etc/passwd 
+   chmod +rw /etc/group
+   chmod +rw /etc/passwd
+
+
+##########################################################################
+####  STEP #4 = Edit the FSTAB File system table
+##########################################################################
+1) Some FSTAB Entries for Your Reference
+   http://cygwin.com/cygwin-ug-net/using.html#mount-table
+
+2) Use these entries 
+C:/cygwin64 / ntfs override,binary,noacl 0 0
+C:/SFTP_ROOT /home ntfs override,binary,noacl 0 0
+C:/cygwin64/bin /usr/bin ntfs override,binary,noacl 0 0
+C:/cygwin64/lib /usr/lib ntfs override,binary,noacl 0 0
+C:/cygwin64/etc/terminfo /usr/share/terminfo ntfs override,binary,noacl 0 0
+
+
+##########################################################################
+####  STEP #5 = Change the nsswitch.conf file
+##########################################################################
+1) This allows only users in the passwd file to login, otherwise if you
+   specify "db" it allows users in the Active Directory to log in also
+
+If you want User Login Access to be soley Controlled by PASSWD file not Active Directory
+edit the /etc/nsswitch.conf
+===========================================================================================
+# /etc/nsswitch.conf
+#
+#    This file is read once by the first process in a Cygwin process tree.
+#    To pick up changes, restart all Cygwin processes.  For a description
+#    see https://cygwin.com/cygwin-ug-net/ntsec.html#ntsec-mapping-nsswitch
+#
+# Defaults:
+# passwd:   files db
+# group:    files db
+# db_enum:  cache builtin
+# db_home:  /home/%U
+# db_shell: /bin/bash
+# db_gecos: <empty>
+
+passwd:   files
+group:    files
+
+
+##########################################################################
+####  STEP #6 = Now Start the Service
+##########################################################################
+1) Start the Service
+net stop sshd
+net start sshd
+netstat -a
+
+2) Make sure to change the Firewall to allow for port 22
+
+
+
+##########################################################################
+####  STEP #7 = Restrict users to home dir
+##########################################################################
+0) Allow edit to sshd_config in cygwin terminal
+chmod 777 /etc/sshd_config
+
+1) Restrict users to home direct, edit the /etc/sshd_config add the lines below
+   a) comment out
+#Subsystem	sftp	/usr/sbin/sftp-server
+
+   b) paste below the subsystem and match group
+Subsystem sftp internal-sftp
+
+Match group sftp_group
+    ChrootDirectory /home/%u
+    X11Forwarding no
+    AllowTcpForwarding no
+    ForceCommand internal-sftp
+
+2) Edit the /etc/passwd file for the user "cyg_server" give it the root id of 0
+   this is necessary for restricting the user to their own home directory
+   cyg_server:*:0
+
+3) Append these to /etc/fstab file, this will hid the /cygdrive and /dev folder 
+   after you have restricted the user to the /home directory
+/dev /null none bind
+none / cygdrive user 0 0
+
+If that dont work then use along with the above:
+echo - / cygdrive acl > /etc/fstab  (for cygdrive folder)
+
+
+4) Go into Cygwin Terminal assign cyg_server /home this is required
+   for the restricting of the user to the home directory
+chown cyg_server /home   For Mine its chown sshd_server /home 
+chmod 0755 /home
+
+5) Start the Service
+net stop sshd
+net start sshd
+
+
+
+
+##########################################################################
+####  OTHER Commands
+##########################################################################
+In the DOS Command Shell
+============================
+net stop sshd
+net start sshd
+netstat -a
+
+Commands to remove the service in Cygwin
+Run as Admin
+==========================================
+cygrunsrv -R sshd 
+
+Commands to remove the service in DOS
+Run as Admin
+==========================================
+SC delete sshd
+
+
+##########################################################################
+####  ADD NEW USERS
+##########################################################################
+
+1) Create the new user in Computer Management Under Local Users and Groups in the Users folder
+
+2) Add the new user to the sftp_group in Computer Management Under Local Users and Groups in the Groups folder
+
+3) Navigate to C:\SFTP_ROOT and create a folder the same as the new users exact name
+
+4) Open the Cygwin Terminal(Run as administrator) the run these commands -Step 3
+   mkgroup > /etc/group 
+   #for local users 
+   mkpasswd -cl > /etc/passwd 
+   #for domain users
+   #mkpasswd -d > /etc/passwd 
+   chmod +rw /etc/group
+   chmod +rw /etc/passwd
+   
+5) Open C:\cygwin64\etc\passd file and make sure cyg_server:*:0:... is in this format.
+
+6) Open services and Stop then Start the CYGWIN sshd service
