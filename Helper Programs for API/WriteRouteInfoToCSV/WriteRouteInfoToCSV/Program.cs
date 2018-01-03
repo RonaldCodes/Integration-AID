@@ -14,11 +14,14 @@ namespace WriteRouteInfoToCSV
             var api = Login("9408065009082", "yase191!", "422");
             var routesToRetrieve = new List<string>
             {
-                "422/ALT06/TFR",
-                "422/ALT05/TFR",
-                "422/ALT04/TFR",
-                "422/ALT02/TFR",
-                "422/ALT01/TFR"
+                //"422/ALT06/TFR",
+                //"422/ALT05/TFR",
+                //"422/ALT04/TFR",
+                //"422/ALT02/TFR",
+                "422/FNO01N/TFR",
+                "422/FNO01N",
+                "422/FNO01/TFR",
+                "422/FNO01"
             };
 
            GetRouteInfo(api, routesToRetrieve);
@@ -51,15 +54,18 @@ namespace WriteRouteInfoToCSV
         public static void WriteToTextFile(RouteInstance route)
         {
             var routeDecos = route.Route.RouteDecos;
-            var routeName = route.Reference.Split('_')[0];
+            //var routeName = route.Reference.Split('_')[0];
 
             var header = $"Route, Location Name, Location Reference, Order{Environment.NewLine}";
-            var path = $@"C:\Users\YaseenH\Desktop\Adhoc\Bidfood\OurSeq{routeName}.csv";
+            var path = $@"C:\Users\YaseenH\Desktop\Adhoc\Bidfood\{route.Reference}.csv";
             File.AppendAllText(path, header);
 
             foreach (var deco in routeDecos)
             {
-                var contents = $"{routeName}, {deco.Deco.DisplayName}, {deco.Deco.Id.Split('/')[1]}, {deco.Order.ToString()}{Environment.NewLine}";
+                var routeLatitude = deco.Deco.Location.Latitude;
+                var routeLongitude = deco.Deco.Location.Longitude;
+
+                var contents = $"{route.Reference}, {deco.Deco.DisplayName}, {deco.Deco.Id.Split('/')[1]}, {deco.Order.ToString()}{Environment.NewLine}";
                 File.AppendAllText(path, contents);
             }
         }
