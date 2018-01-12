@@ -29,5 +29,15 @@ namespace CleanProfile
                 PassWord = "yase191!"
             };
         }
+
+        public SiteData RichProducts()
+        {
+            return new SiteData()
+            {
+                Id = "439",
+                UserName = "9408065009082",
+                PassWord = "yase191!"
+            };
+        }
     }
 }
