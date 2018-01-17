@@ -10,6 +10,9 @@ TestUser
 test191!
 Port : 22
 
+video for port : https://www.youtube.com/watch?v=deyt8GzHMXw
+video for cygwin setup : https://www.youtube.com/watch?v=CXzBdVXjKGU
+
 ##########################################################################
 ####  STEP #0 = Install Cygwin and OpenSSH Files
 ##########################################################################
