@@ -26,7 +26,7 @@ namespace WritePersonnelTo_CSV
         {
             try
             {
-                var header = $"FirstName, FullName, Nature, IdentityNumber{Environment.NewLine}";
+                var header = $"FirstName, FullName, Nature, Type, IdentityNumber{Environment.NewLine}";
                 var path = $@"C:\Users\YaseenH\Desktop\Adhoc\personnel.csv";
                 File.AppendAllText(path, header);
 
@@ -47,7 +47,7 @@ namespace WritePersonnelTo_CSV
         public static void PersonnelLookup(Api api, Personnel personnel)
         {
             var path = $@"C:\Users\YaseenH\Desktop\Adhoc\personnel.csv";
-            var contents = $"{personnel.FirstName}, {personnel.FullName},{personnel.Nature},{personnel.IdentityNumber}{Environment.NewLine}";
+            var contents = $"{personnel.FirstName}, {personnel.FullName},{personnel.Nature},{personnel.Type},{personnel.IdentityNumber}{Environment.NewLine}";
             File.AppendAllText(path, contents);
         }
 

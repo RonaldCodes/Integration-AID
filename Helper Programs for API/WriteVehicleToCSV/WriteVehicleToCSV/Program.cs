@@ -36,13 +36,14 @@ namespace WriteVehicleToCSV
         public static void WriteToTextFile(List<VehicleInfo> vehicles)
         {
 
-            var header = $"Registration, FleetNumber{Environment.NewLine}";
+            var header = $"Registration, FleetNumber, Make , model{Environment.NewLine}";
             var path = $@"C:\Users\YaseenH\Desktop\Adhoc\Vehicles.csv";
             File.AppendAllText(path, header);
 
             foreach (var vehicle in vehicles)
             {
-                var contents = $"{vehicle.RegistrationNumber}, {vehicle.CurrentCallSign}{Environment.NewLine}";
+                var type = vehicle.Description;
+                var contents = $"{vehicle.RegistrationNumber}, {vehicle.CurrentCallSign}, {vehicle.Make}, {vehicle.Model}{Environment.NewLine}";
                 File.AppendAllText(path, contents);
             }
         }
