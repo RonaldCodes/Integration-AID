@@ -24,9 +24,9 @@ namespace RouteBuilderManipulator
             var controller = new Controller();
 
             /* Update the below */
-            controller.fromDate = new DateTime(2017, 01, 01);
-            controller.toDate = new DateTime(2017, 10, 29);
-            var forSite = site.TrackmaticTest();
+            controller.fromDate = new DateTime(2018, 04, 01);
+            controller.toDate = new DateTime(2018, 04, 15);
+            var forSite = site.LGB();
 
             /* Does the rest */
             controller.DeletePlannedActionWithLocation(forSite);

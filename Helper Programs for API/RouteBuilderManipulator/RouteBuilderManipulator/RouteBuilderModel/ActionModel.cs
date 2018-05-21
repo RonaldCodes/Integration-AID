@@ -9,9 +9,23 @@ namespace RouteBuilderManipulator
     {
         public void DeletePlannedActioWithLocation(Api api, int take, int skip, DateTime startDate, DateTime endDate)
         {
+            var date = new DateTime(2018, 04, 16);
+
             var actionsWithZones = api.ExecuteRequest(new Trackmatic.Rest.Planning.Requests.SearchPlannedActionsWithZones(api.Context, "", take, skip, startDate, endDate)).Data.Data;
-            var actionIds = actionsWithZones.Select(x => x.Id).Distinct().ToList();
-            var locationIds = actionsWithZones.Select(p => p.Entity).Select(p => p.Deco.Id).Distinct().ToList();
+            var test = actionsWithZones.Where(x => x.ExpectedDelivery < date);
+            var actionIds = test.Select(x => x.Id).Distinct().ToList();
+
+
+            var locationIds = new List<string>();
+            try
+            {
+                 locationIds.AddRange(test.Select(p => p.Entity).Select(p => p.Deco.Id).Distinct().ToList());
+            }
+            catch (NullReferenceException)
+            {
+                
+            }
+
             foreach (var locationId in locationIds)
             {
                 var deletelocation = api.ExecuteRequest(new Trackmatic.Rest.Planning.Requests.DeleteLocation(api.Context, locationId));

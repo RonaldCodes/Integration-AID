@@ -34,5 +34,14 @@
                 PassWord = "yase191!"
             };
         }
+        public SiteData LGB()
+        {
+            return new SiteData()
+            {
+                ClientId = "407",
+                UserName = "0000000000407",
+                PassWord = "!!T8Zuh$"
+            };
+        }
     }
 }
