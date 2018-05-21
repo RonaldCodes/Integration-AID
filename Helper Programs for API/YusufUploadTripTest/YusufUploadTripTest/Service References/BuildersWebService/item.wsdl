@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://wwww.trackmatic.co.za/schemas" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://wwww.trackmatic.co.za/schemas" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://wwww.trackmatic.co.za/schemas/Imports">
+      <xsd:import schemaLocation="http://ba62b49d98d94894b85c992574dfff8b.cloudapp.net:8001/?xsd=xsd0" namespace="http://wwww.trackmatic.co.za/schemas" />
+      <xsd:import schemaLocation="http://ba62b49d98d94894b85c992574dfff8b.cloudapp.net:8001/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IIntegrationBuilders_UploadTrip_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadTrip" />
+  </wsdl:message>
+  <wsdl:message name="IIntegrationBuilders_UploadTrip_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadTripResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IIntegrationBuilders">
+    <wsdl:operation name="UploadTrip">
+      <wsdl:input wsaw:Action="http://wwww.trackmatic.co.za/schemas/IIntegrationBuilders/UploadTrip" message="tns:IIntegrationBuilders_UploadTrip_InputMessage" />
+      <wsdl:output wsaw:Action="http://wwww.trackmatic.co.za/schemas/IIntegrationBuilders/UploadTripResponse" message="tns:IIntegrationBuilders_UploadTrip_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

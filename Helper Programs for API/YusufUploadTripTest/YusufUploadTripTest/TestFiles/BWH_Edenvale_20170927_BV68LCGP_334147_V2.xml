@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<Trip xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://wwww.trackmatic.co.za/schemas">
+    <CreatedOn>2017-09-27T16:55:45.533</CreatedOn>
+    <Location>Bex Norwood</Location>
+    <Name>BWH_Edenvale_20170927_BV68LCGP_334147</Name>
+    <Start>2017-09-28T10:59:00</Start>
+    <Stops>
+      <Stop>
+        <Arrival>2017-09-28T10:59:00</Arrival>
+        <ClusterName>_334147</ClusterName>
+        <Departure>2017-09-28T10:59:00</Departure>
+        <DropPoints>
+          <DropPoint>
+            <Id>222320</Id>
+            <Latitude>-26.1503</Latitude>
+            <Longitude>28.081</Longitude>
+            <Waybills>
+              <Waybill>
+                <Address>
+                  <Line1>Bex Norwood</Line1>
+                  <Line2>Cnr Sarie Marais and African Street Norwood</Line2>
+                  <Line3 />
+                  <Line4 />
+                  <PostalCode />
+                </Address>
+                <Cubes>0</Cubes>
+                <CustomerCode />
+                <CustomerName>Trip Start</CustomerName>
+                <DpCode>28A2223201</DpCode>
+                <Id>28A2223201</Id>
+                <Mass>0</Mass>
+                <Parcels>0</Parcels>
+                <Reference>BV68LCGP</Reference>
+                <ServiceType xsi:nil="true" />
+                <StoreName>BWH ROSSBURGH</StoreName>
+                <ValueRef>Trip Start</ValueRef>
+              </Waybill>
+            </Waybills>
+          </DropPoint>
+        </DropPoints>
+        <Order>1</Order>
+      </Stop>
+      <Stop>
+        <Arrival>2017-09-28T10:59:00</Arrival>
+        <ClusterName>_334147</ClusterName>
+        <Departure>2017-09-28T12:44:00</Departure>
+        <DropPoints>
+          <DropPoint>
+            <Id>222320</Id>
+            <Latitude>-26.1503</Latitude>
+            <Longitude>28.081</Longitude>
+            <Waybills>
+              <Waybill>
+                <Address>
+                  <Line1>Bex Norwood</Line1>
+                  <Line2>Cnr Sarie Marais and African Street Norwood</Line2>
+                  <Line3 />
+                  <Line4 />
+                  <PostalCode />
+                </Address>
+                <Cubes>0</Cubes>
+                <CustomerCode />
+                <CustomerName>Depot Loading</CustomerName>
+                <DpCode>28A2223202</DpCode>
+                <Id>28A2223202</Id>
+                <Mass>0</Mass>
+                <Parcels>0</Parcels>
+                <Reference>BV68LCGP</Reference>
+                <ServiceType xsi:nil="true" />
+                <StoreName>BWH ROSSBURGH</StoreName>
+                <ValueRef>Depot Loading</ValueRef>
+              </Waybill>
+            </Waybills>
+          </DropPoint>
+        </DropPoints>
+        <Order>2</Order>
+      </Stop>
+      <Stop>
+        <Arrival>2017-09-28T12:45:00</Arrival>
+        <ClusterName>_334147</ClusterName>
+        <Departure>2017-09-28T13:07:00</Departure>
+        <DropPoints>
+          <DropPoint>
+            <Id>222320</Id>
+            <Latitude>-26.1554</Latitude>
+            <Longitude>28.0795</Longitude>
+            <Waybills>
+              <Waybill>
+                <Address>
+                  <Line1>41 GARDEN ROAD</Line1>
+                  <Line2>ORCHARDS</Line2>
+                  <Line3 />
+                  <Line4 />
+                  <PostalCode />
+                </Address>
+                <Cubes>18452296</Cubes>
+                <CustomerCode>C1289376</CustomerCode>
+                <CustomerName>A.E COHEN</CustomerName>
+                <DpCode>C1289376</DpCode>
+                <Id>28AC12893763</Id>
+                <Mass>25</Mass>
+                <Parcels>50</Parcels>
+                <Reference>BV68LCGP</Reference>
+                <ServiceType xsi:nil="true" />
+                <StoreName>A.E COHEN</StoreName>
+                <ValueRef>DELIVERY FOR TOMORROW 20170928</ValueRef>
+              </Waybill>
+            </Waybills>
+          </DropPoint>
+        </DropPoints>
+        <Order>3</Order>
+      </Stop>
+      <Stop>
+        <Arrival>2017-09-28T13:12:00</Arrival>
+        <ClusterName>_334147</ClusterName>
+        <Departure>2017-09-28T13:42:00</Departure>
+        <DropPoints>
+          <DropPoint>
+            <Id>222320</Id>
+            <Latitude>-26.1477</Latitude>
+            <Longitude>28.0938</Longitude>
+            <Waybills>
+              <Waybill>
+                <Address>
+                  <Line1>13A ELRAY STREET</Line1>
+                  <Line2>FAIRMOUNT</Line2>
+                  <Line3 />
+                  <Line4 />
+                  <PostalCode>.</PostalCode>
+                </Address>
+                <Cubes>1</Cubes>
+                <CustomerCode>C1284109_1</CustomerCode>
+                <CustomerName>JOSIP BAKOTA</CustomerName>
+                <DpCode>C1284109_1</DpCode>
+                <Id>28AC1284109_14</Id>
+                <Mass>1</Mass>
+                <Parcels>2000</Parcels>
+                <Reference>BV68LCGP</Reference>
+                <ServiceType xsi:nil="true" />
+                <StoreName>JOSIP BAKOTA</StoreName>
+                <ValueRef />
+              </Waybill>
+            </Waybills>
+          </DropPoint>
+        </DropPoints>
+        <Order>4</Order>
+      </Stop>
+      <Stop>
+        <Arrival>2017-09-28T13:46:00</Arrival>
+        <ClusterName>_334147</ClusterName>
+        <Departure>2017-09-28T13:46:00</Departure>
+        <DropPoints>
+          <DropPoint>
+            <Id>222320</Id>
+            <Latitude>-26.1503</Latitude>
+            <Longitude>28.081</Longitude>
+            <Waybills>
+              <Waybill>
+                <Address>
+                  <Line1>Bex Norwood</Line1>
+                  <Line2>Cnr Sarie Marais and African Street Norwood</Line2>
+                  <Line3 />
+                  <Line4 />
+                  <PostalCode />
+                </Address>
+                <Cubes>0</Cubes>
+                <CustomerCode />
+                <CustomerName>Trip End</CustomerName>
+                <DpCode>28A2223205</DpCode>
+                <Id>28A2223205</Id>
+                <Mass>0</Mass>
+                <Parcels>0</Parcels>
+                <Reference>BV68LCGP</Reference>
+                <ServiceType xsi:nil="true" />
+                <StoreName>BWH ROSSBURGH</StoreName>
+                <ValueRef>Trip End</ValueRef>
+              </Waybill>
+            </Waybills>
+          </DropPoint>
+        </DropPoints>
+        <Order>5</Order>
+      </Stop>
+    </Stops>
+</Trip>

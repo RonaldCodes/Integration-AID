@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://wwww.trackmatic.co.za/schemas" elementFormDefault="qualified" targetNamespace="http://wwww.trackmatic.co.za/schemas" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="UploadTrip">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="trip" nillable="true" type="tns:Trip" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="Trip">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedOn" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Start" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Stops" nillable="true" type="tns:ArrayOfStop" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Trip" nillable="true" type="tns:Trip" />
+  <xs:complexType name="ArrayOfStop">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Stop" nillable="true" type="tns:Stop" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStop" nillable="true" type="tns:ArrayOfStop" />
+  <xs:complexType name="Stop">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Arrival" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ClusterName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Departure" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DropPoints" nillable="true" type="tns:ArrayOfDropPoint" />
+      <xs:element minOccurs="0" name="Order" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Stop" nillable="true" type="tns:Stop" />
+  <xs:complexType name="ArrayOfDropPoint">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DropPoint" nillable="true" type="tns:DropPoint" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDropPoint" nillable="true" type="tns:ArrayOfDropPoint" />
+  <xs:complexType name="DropPoint">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Latitude" type="xs:double" />
+      <xs:element minOccurs="0" name="Longitude" type="xs:double" />
+      <xs:element minOccurs="0" name="Waybills" nillable="true" type="tns:ArrayOfWaybill" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DropPoint" nillable="true" type="tns:DropPoint" />
+  <xs:complexType name="ArrayOfWaybill">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Waybill" nillable="true" type="tns:Waybill" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWaybill" nillable="true" type="tns:ArrayOfWaybill" />
+  <xs:complexType name="Waybill">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="tns:Address" />
+      <xs:element minOccurs="0" name="Cubes" type="xs:double" />
+      <xs:element minOccurs="0" name="CustomerCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DpCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mass" type="xs:double" />
+      <xs:element minOccurs="0" name="Parcels" type="xs:int" />
+      <xs:element minOccurs="0" name="Reference" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ServiceType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StoreName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValueRef" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Waybill" nillable="true" type="tns:Waybill" />
+  <xs:complexType name="Address">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Line1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Line2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Line3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Line4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Address" nillable="true" type="tns:Address" />
+  <xs:element name="UploadTripResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4b49d9d7-423a-48a0-a9f3-d8f3e6e8c763" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://ba62b49d98d94894b85c992574dfff8b.cloudapp.net:8001" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="18ba8c7e-4a3c-4ad6-9af3-8ba85021ab75" SourceId="1" SourceUrl="http://ba62b49d98d94894b85c992574dfff8b.cloudapp.net:8001/?xsd=xsd0" />
+    <MetadataFile FileName="item.wsdl" MetadataType="Wsdl" ID="b0676aec-42d5-4dea-ab50-310500d2fc4d" SourceId="1" SourceUrl="http://ba62b49d98d94894b85c992574dfff8b.cloudapp.net:8001/?wsdl=wsdl0" />
+    <MetadataFile FileName="Listener.wsdl" MetadataType="Wsdl" ID="302dece6-f73f-4ba0-b661-a676d47fa1db" SourceId="1" SourceUrl="http://ba62b49d98d94894b85c992574dfff8b.cloudapp.net:8001/?wsdl" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="c4a0d069-598c-4bf3-be57-4076c97501ff" SourceId="1" SourceUrl="http://ba62b49d98d94894b85c992574dfff8b.cloudapp.net:8001/?xsd=xsd1" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="95b950d1-ea42-4a20-98a0-5d3318b28ed2" SourceId="1" SourceUrl="http://ba62b49d98d94894b85c992574dfff8b.cloudapp.net:8001/?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

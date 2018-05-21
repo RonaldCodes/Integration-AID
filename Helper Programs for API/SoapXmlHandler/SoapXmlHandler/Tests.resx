@@ -1,0 +1,1582 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Trip_9000932" xml:space="preserve">
+    <value>{
+  "TripHeaderID": 9000932,
+  "SrcBU": 2000,
+  "DestBU": 2011,
+  "TripDate": "2018-01-18T07:04:00",
+  "PlannedRoute": true,
+  "PlannedRouteID": "TR4_27870",
+  "Vehicle": {
+    "VehID": 11016,
+    "VehRegno": "FV46JLGP",
+    "VehMake": "WHITE RX FRIDGE BAKKIE",
+    "VehModel": "2017-01-01T00:00:00",
+    "VehType": "293",
+    "VehMaxLoad": 770,
+    "VehDesc": "IZUZU",
+    "VehNumber": "VEH.00019 ",
+    "VehLength": 223,
+    "VehWidth": 170,
+    "VehHeight": 155
+  },
+  "Driver": {
+    "DriverID": 58838,
+    "DriverRegID": 0,
+    "IDNo": "8305295500081",
+    "Name": "BHEKA CYRIL NKOSI"
+  },
+  "PlannedTripStartAt": "2018-01-18T07:47:43",
+  "Consignments": [
+    {
+      "TripPODNo": 0,
+      "ConsType": "Depot",
+      "References": null,
+      "ConsignmentNo": null,
+      "ConsignmentID": 0,
+      "Account": null,
+      "TotalParcelCount": 0,
+      "Address": null,
+      "Parcels": null,
+      "RICA": null,
+      "StopNumber": 1,
+      "PlannedStopArrivalTime": "2018-01-18T07:47:43",
+      "PlannedStopDepartureTime": "2018-01-18T07:47:43",
+      "PlannedStopOffloadDuration": 0,
+      "PlannedTravelDuration": 0,
+      "PlannedTravelDistance": 0.0
+    },
+    {
+      "TripPODNo": 900093200007,
+      "ConsType": "Delivery",
+      "References": [
+        {
+          "ref_type": 4,
+          "refno": "SLW803690                     ",
+          "conno": 201594759
+        },
+        {
+          "ref_type": 28,
+          "refno": "201594759                     ",
+          "conno": 201594759
+        }
+      ],
+      "ConsignmentNo": "SLW803690",
+      "ConsignmentID": 201594759,
+      "Account": {
+        "Acc_Id": 11608,
+        "AccountNo": "S001544",
+        "account_name": "SANLOUW PRODUCTS DISTRIBUTION CC",
+        "AccountType": null
+      },
+      "TotalParcelCount": 1,
+      "Address": {
+        "Addr_id": -23556437,
+        "SizweAddressId": null,
+        "Cons_id": 201594759,
+        "AddrType": 1,
+        "Name": "DISCHEM JEAN AVE",
+        "Address1": "CNR JEAN AVE &amp; RABIE STR",
+        "Suburb": "HIGHLANDS NORTH",
+        "Town": "JOHANNESBURG",
+        "Postal": "2192",
+        "Country": null,
+        "ContactName": null,
+        "ContactNumberCell": null,
+        "ContactNumberAlt": null,
+        "GpsLat": "-25.841",
+        "GpsLong": "28.18519"
+      },
+      "Parcels": [
+        {
+          "ParcelID": 473825432,
+          "ConsID": 201594759,
+          "Barcode": "SLW008036900001",
+          "Length": 0.0,
+          "Width": 0.0,
+          "Height": 0.0,
+          "ActualKG": 4.0,
+          "VolumizerKG": 0.0,
+          "UsedKG": 4.0,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T21:48:58",
+          "Refs": null
+        }
+      ],
+      "RICA": {
+        "RICA_STATUS": 0,
+        "VerificationData": []
+      },
+      "StopNumber": 2,
+      "PlannedStopArrivalTime": "2018-01-18T09:02:48",
+      "PlannedStopDepartureTime": "2018-01-18T10:23:48",
+      "PlannedStopOffloadDuration": 81,
+      "PlannedTravelDuration": 14,
+      "PlannedTravelDistance": 13.5666
+    },
+    {
+      "TripPODNo": 900093200001,
+      "ConsType": "Delivery",
+      "References": [
+        {
+          "ref_type": 1,
+          "refno": "9003342331                    ",
+          "conno": 201596487
+        },
+        {
+          "ref_type": 3,
+          "refno": "4505529937_HY                 ",
+          "conno": 201596487
+        },
+        {
+          "ref_type": 28,
+          "refno": "201596487                     ",
+          "conno": 201596487
+        }
+      ],
+      "ConsignmentNo": "IHS8001607344",
+      "ConsignmentID": 201596487,
+      "Account": {
+        "Acc_Id": 4431,
+        "AccountNo": "PHDWH01",
+        "account_name": "IMPERIAL LOGISTICS SA GROUP PROPRIETARY",
+        "AccountType": null
+      },
+      "TotalParcelCount": 1,
+      "Address": {
+        "Addr_id": 11922078,
+        "SizweAddressId": null,
+        "Cons_id": 201596487,
+        "AddrType": 1,
+        "Name": "DIS-CHEM PHARMACY JEAN AVENUE",
+        "Address1": "CNR JEAN AVENUE &amp; RABIE STREET",
+        "Suburb": "CENTURION CENTRAL",
+        "Town": "CENTURION",
+        "Postal": "157",
+        "Country": null,
+        "ContactName": null,
+        "ContactNumberCell": null,
+        "ContactNumberAlt": null,
+        "GpsLat": "-25.841",
+        "GpsLong": "28.18519"
+      },
+      "Parcels": [
+        {
+          "ParcelID": 473829263,
+          "ConsID": 201596487,
+          "Barcode": "IHS113703176",
+          "Length": 45.2,
+          "Width": 30.5,
+          "Height": 31.2,
+          "ActualKG": 10.52,
+          "VolumizerKG": 10.75,
+          "UsedKG": 10.75,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-18T03:46:58.05",
+          "Refs": null
+        }
+      ],
+      "RICA": {
+        "RICA_STATUS": 0,
+        "VerificationData": []
+      },
+      "StopNumber": 3,
+      "PlannedStopArrivalTime": "2018-01-18T09:02:48",
+      "PlannedStopDepartureTime": "2018-01-18T10:23:48",
+      "PlannedStopOffloadDuration": 81,
+      "PlannedTravelDuration": 14,
+      "PlannedTravelDistance": 13.5666
+    },
+    {
+      "TripPODNo": 900093200012,
+      "ConsType": "Delivery",
+      "References": [
+        {
+          "ref_type": 1,
+          "refno": "9003338242                    ",
+          "conno": 201581375
+        },
+        {
+          "ref_type": 3,
+          "refno": "MEGAN10012018                 ",
+          "conno": 201581375
+        },
+        {
+          "ref_type": 28,
+          "refno": "201581375                     ",
+          "conno": 201581375
+        }
+      ],
+      "ConsignmentNo": "IHS8001605440",
+      "ConsignmentID": 201581375,
+      "Account": {
+        "Acc_Id": 4431,
+        "AccountNo": "PHDWH01",
+        "account_name": "IMPERIAL LOGISTICS SA GROUP PROPRIETARY",
+        "AccountType": null
+      },
+      "TotalParcelCount": 20,
+      "Address": {
+        "Addr_id": 11921060,
+        "SizweAddressId": null,
+        "Cons_id": 201581375,
+        "AddrType": 1,
+        "Name": "ACTIVO SAMPLE ACC (NON QA)",
+        "Address1": "272 WEST AVENUE",
+        "Suburb": "BRONBEEEICK",
+        "Town": "CENTURION",
+        "Postal": "157",
+        "Country": null,
+        "ContactName": null,
+        "ContactNumberCell": null,
+        "ContactNumberAlt": null,
+        "GpsLat": "-25.85589",
+        "GpsLong": "28.19434"
+      },
+      "Parcels": [
+        {
+          "ParcelID": 473799883,
+          "ConsID": 201581375,
+          "Barcode": "IHS113698367",
+          "Length": 32.4,
+          "Width": 27.1,
+          "Height": 20.3,
+          "ActualKG": 4.66,
+          "VolumizerKG": 4.46,
+          "UsedKG": 4.66,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T16:49:45.757",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473802232,
+          "ConsID": 201581375,
+          "Barcode": "IHS113698351",
+          "Length": 17.0,
+          "Width": 17.0,
+          "Height": 17.0,
+          "ActualKG": 2.0,
+          "VolumizerKG": 1.23,
+          "UsedKG": 2.0,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:01:30.797",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473802233,
+          "ConsID": 201581375,
+          "Barcode": "IHS113698357",
+          "Length": 17.0,
+          "Width": 17.0,
+          "Height": 17.0,
+          "ActualKG": 2.0,
+          "VolumizerKG": 1.23,
+          "UsedKG": 2.0,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:01:31.827",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473802234,
+          "ConsID": 201581375,
+          "Barcode": "IHS113701128",
+          "Length": 17.0,
+          "Width": 17.0,
+          "Height": 17.0,
+          "ActualKG": 2.0,
+          "VolumizerKG": 1.23,
+          "UsedKG": 2.0,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:01:32.467",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473802244,
+          "ConsID": 201581375,
+          "Barcode": "IHS113698363",
+          "Length": 17.0,
+          "Width": 17.0,
+          "Height": 17.0,
+          "ActualKG": 2.0,
+          "VolumizerKG": 1.23,
+          "UsedKG": 2.0,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:01:36.687",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473802245,
+          "ConsID": 201581375,
+          "Barcode": "IHS113698364",
+          "Length": 18.0,
+          "Width": 17.0,
+          "Height": 17.0,
+          "ActualKG": 2.0,
+          "VolumizerKG": 1.3,
+          "UsedKG": 2.0,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:01:37.827",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473802247,
+          "ConsID": 201581375,
+          "Barcode": "IHS113698365",
+          "Length": 17.0,
+          "Width": 16.0,
+          "Height": 17.0,
+          "ActualKG": 2.0,
+          "VolumizerKG": 1.16,
+          "UsedKG": 2.0,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:01:38.623",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473802248,
+          "ConsID": 201581375,
+          "Barcode": "IHS113698352",
+          "Length": 17.0,
+          "Width": 17.0,
+          "Height": 17.0,
+          "ActualKG": 2.0,
+          "VolumizerKG": 1.23,
+          "UsedKG": 2.0,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:01:39.64",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473802249,
+          "ConsID": 201581375,
+          "Barcode": "IHS113698360",
+          "Length": 17.0,
+          "Width": 17.0,
+          "Height": 17.0,
+          "ActualKG": 2.0,
+          "VolumizerKG": 1.23,
+          "UsedKG": 2.0,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:01:40.407",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473802250,
+          "ConsID": 201581375,
+          "Barcode": "IHS113698362",
+          "Length": 17.0,
+          "Width": 17.0,
+          "Height": 17.0,
+          "ActualKG": 2.0,
+          "VolumizerKG": 1.23,
+          "UsedKG": 2.0,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:01:41.233",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473802256,
+          "ConsID": 201581375,
+          "Barcode": "IHS113698356",
+          "Length": 18.0,
+          "Width": 17.0,
+          "Height": 17.0,
+          "ActualKG": 2.0,
+          "VolumizerKG": 1.3,
+          "UsedKG": 2.0,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:01:42.623",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473802262,
+          "ConsID": 201581375,
+          "Barcode": "IHS113698349",
+          "Length": 17.0,
+          "Width": 17.0,
+          "Height": 17.0,
+          "ActualKG": 2.0,
+          "VolumizerKG": 1.23,
+          "UsedKG": 2.0,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:01:43.75",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473802264,
+          "ConsID": 201581375,
+          "Barcode": "IHS113698355",
+          "Length": 17.0,
+          "Width": 17.0,
+          "Height": 17.0,
+          "ActualKG": 2.0,
+          "VolumizerKG": 1.23,
+          "UsedKG": 2.0,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:01:45.233",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473802266,
+          "ConsID": 201581375,
+          "Barcode": "IHS113698361",
+          "Length": 17.0,
+          "Width": 16.0,
+          "Height": 17.0,
+          "ActualKG": 2.0,
+          "VolumizerKG": 1.16,
+          "UsedKG": 2.0,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:01:45.873",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473802267,
+          "ConsID": 201581375,
+          "Barcode": "IHS113698353",
+          "Length": 17.0,
+          "Width": 17.0,
+          "Height": 17.0,
+          "ActualKG": 2.0,
+          "VolumizerKG": 1.23,
+          "UsedKG": 2.0,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:01:46.843",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473802268,
+          "ConsID": 201581375,
+          "Barcode": "IHS113698366",
+          "Length": 32.0,
+          "Width": 27.0,
+          "Height": 20.0,
+          "ActualKG": 5.0,
+          "VolumizerKG": 4.32,
+          "UsedKG": 5.0,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:01:47.36",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473802272,
+          "ConsID": 201581375,
+          "Barcode": "IHS113698350",
+          "Length": 17.0,
+          "Width": 16.0,
+          "Height": 17.0,
+          "ActualKG": 2.0,
+          "VolumizerKG": 1.16,
+          "UsedKG": 2.0,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:01:50.047",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473802273,
+          "ConsID": 201581375,
+          "Barcode": "IHS113698354",
+          "Length": 17.0,
+          "Width": 16.0,
+          "Height": 17.0,
+          "ActualKG": 2.0,
+          "VolumizerKG": 1.16,
+          "UsedKG": 2.0,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:01:50.593",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473802274,
+          "ConsID": 201581375,
+          "Barcode": "IHS113698358",
+          "Length": 17.0,
+          "Width": 17.0,
+          "Height": 17.0,
+          "ActualKG": 2.0,
+          "VolumizerKG": 1.23,
+          "UsedKG": 2.0,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:01:51.233",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473804499,
+          "ConsID": 201581375,
+          "Barcode": "IHS113698424",
+          "Length": 31.0,
+          "Width": 24.0,
+          "Height": 31.0,
+          "ActualKG": 5.0,
+          "VolumizerKG": 5.77,
+          "UsedKG": 5.77,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:20:41.993",
+          "Refs": null
+        }
+      ],
+      "RICA": {
+        "RICA_STATUS": 0,
+        "VerificationData": []
+      },
+      "StopNumber": 4,
+      "PlannedStopArrivalTime": "2018-01-18T10:28:55",
+      "PlannedStopDepartureTime": "2018-01-18T10:41:55",
+      "PlannedStopOffloadDuration": 13,
+      "PlannedTravelDuration": 5,
+      "PlannedTravelDistance": 2.4476
+    },
+    {
+      "TripPODNo": 900093200012,
+      "ConsType": "Delivery",
+      "References": [
+        {
+          "ref_type": 1,
+          "refno": "9003338198                    ",
+          "conno": 201582560
+        },
+        {
+          "ref_type": 3,
+          "refno": "BERNICE10012018               ",
+          "conno": 201582560
+        },
+        {
+          "ref_type": 28,
+          "refno": "201582560                     ",
+          "conno": 201582560
+        }
+      ],
+      "ConsignmentNo": "IHS8001605442",
+      "ConsignmentID": 201582560,
+      "Account": {
+        "Acc_Id": 4431,
+        "AccountNo": "PHDWH01",
+        "account_name": "IMPERIAL LOGISTICS SA GROUP PROPRIETARY",
+        "AccountType": null
+      },
+      "TotalParcelCount": 7,
+      "Address": {
+        "Addr_id": 11921060,
+        "SizweAddressId": null,
+        "Cons_id": 201582560,
+        "AddrType": 1,
+        "Name": "ACTIVO SAMPLE ACC (NON QA)",
+        "Address1": "272 WEST AVENUE",
+        "Suburb": "BRONBEEEICK",
+        "Town": "CENTURION",
+        "Postal": "157",
+        "Country": null,
+        "ContactName": null,
+        "ContactNumberCell": null,
+        "ContactNumberAlt": null,
+        "GpsLat": "-25.85589",
+        "GpsLong": "28.19434"
+      },
+      "Parcels": [
+        {
+          "ParcelID": 473803119,
+          "ConsID": 201582560,
+          "Barcode": "IHS113698370",
+          "Length": 30.0,
+          "Width": 28.1,
+          "Height": 20.0,
+          "ActualKG": 1.48,
+          "VolumizerKG": 4.22,
+          "UsedKG": 4.22,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:08:00.577",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473804289,
+          "ConsID": 201582560,
+          "Barcode": "IHS113698368",
+          "Length": 32.0,
+          "Width": 27.0,
+          "Height": 20.0,
+          "ActualKG": 3.0,
+          "VolumizerKG": 4.32,
+          "UsedKG": 4.32,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:18:48.44",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473804294,
+          "ConsID": 201582560,
+          "Barcode": "IHS113698371",
+          "Length": 29.0,
+          "Width": 28.0,
+          "Height": 20.0,
+          "ActualKG": 1.0,
+          "VolumizerKG": 4.06,
+          "UsedKG": 4.06,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:18:51.25",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473804296,
+          "ConsID": 201582560,
+          "Barcode": "IHS113698372",
+          "Length": 30.0,
+          "Width": 28.0,
+          "Height": 20.0,
+          "ActualKG": 1.0,
+          "VolumizerKG": 4.2,
+          "UsedKG": 4.2,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:18:51.877",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473804297,
+          "ConsID": 201582560,
+          "Barcode": "IHS113698373",
+          "Length": 29.0,
+          "Width": 28.0,
+          "Height": 20.0,
+          "ActualKG": 1.0,
+          "VolumizerKG": 4.06,
+          "UsedKG": 4.06,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:18:52.533",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473804298,
+          "ConsID": 201582560,
+          "Barcode": "IHS113698369",
+          "Length": 31.0,
+          "Width": 27.0,
+          "Height": 20.0,
+          "ActualKG": 3.0,
+          "VolumizerKG": 4.19,
+          "UsedKG": 4.19,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:18:53.47",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473805795,
+          "ConsID": 201582560,
+          "Barcode": "IHS113698425",
+          "Length": 23.0,
+          "Width": 15.0,
+          "Height": 16.0,
+          "ActualKG": 1.0,
+          "VolumizerKG": 1.38,
+          "UsedKG": 1.38,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T17:34:03.29",
+          "Refs": null
+        }
+      ],
+      "RICA": {
+        "RICA_STATUS": 0,
+        "VerificationData": []
+      },
+      "StopNumber": 5,
+      "PlannedStopArrivalTime": "2018-01-18T10:28:55",
+      "PlannedStopDepartureTime": "2018-01-18T10:41:55",
+      "PlannedStopOffloadDuration": 13,
+      "PlannedTravelDuration": 5,
+      "PlannedTravelDistance": 2.4476
+    },
+    {
+      "TripPODNo": 900093200008,
+      "ConsType": "Delivery",
+      "References": [
+        {
+          "ref_type": 1,
+          "refno": "9003339024                    ",
+          "conno": 201593027
+        },
+        {
+          "ref_type": 3,
+          "refno": "SO3000144_HB                  ",
+          "conno": 201593027
+        },
+        {
+          "ref_type": 28,
+          "refno": "201593027                     ",
+          "conno": 201593027
+        }
+      ],
+      "ConsignmentNo": "IHS8001606553",
+      "ConsignmentID": 201593027,
+      "Account": {
+        "Acc_Id": 4431,
+        "AccountNo": "PHDWH01",
+        "account_name": "IMPERIAL LOGISTICS SA GROUP PROPRIETARY",
+        "AccountType": null
+      },
+      "TotalParcelCount": 1,
+      "Address": {
+        "Addr_id": 1054563,
+        "SizweAddressId": null,
+        "Cons_id": 201593027,
+        "AddrType": 1,
+        "Name": "P B M SILDER PARK",
+        "Address1": "CNR CONVEYER AND ASSETELLIN ST SILVERTONDALE INDUSTRIAL PARK",
+        "Suburb": null,
+        "Town": null,
+        "Postal": "184",
+        "Country": null,
+        "ContactName": null,
+        "ContactNumberCell": null,
+        "ContactNumberAlt": null,
+        "GpsLat": "-25.75417",
+        "GpsLong": "28.36225"
+      },
+      "Parcels": [
+        {
+          "ParcelID": 473822801,
+          "ConsID": 201593027,
+          "Barcode": "IHS113700460",
+          "Length": 23.4,
+          "Width": 15.4,
+          "Height": 16.3,
+          "ActualKG": 0.48,
+          "VolumizerKG": 1.17,
+          "UsedKG": 1.17,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T20:50:38.24",
+          "Refs": null
+        }
+      ],
+      "RICA": {
+        "RICA_STATUS": 0,
+        "VerificationData": []
+      },
+      "StopNumber": 6,
+      "PlannedStopArrivalTime": "2018-01-18T10:43:49",
+      "PlannedStopDepartureTime": "2018-01-18T10:58:49",
+      "PlannedStopOffloadDuration": 15,
+      "PlannedTravelDuration": 2,
+      "PlannedTravelDistance": 1.0934
+    },
+    {
+      "TripPODNo": 900093200011,
+      "ConsType": "Delivery",
+      "References": [
+        {
+          "ref_type": 1,
+          "refno": "9003337944                    ",
+          "conno": 201581339
+        },
+        {
+          "ref_type": 3,
+          "refno": "stock1                        ",
+          "conno": 201581339
+        },
+        {
+          "ref_type": 28,
+          "refno": "201581339                     ",
+          "conno": 201581339
+        }
+      ],
+      "ConsignmentNo": "IHS8001605830",
+      "ConsignmentID": 201581339,
+      "Account": {
+        "Acc_Id": 4431,
+        "AccountNo": "PHDWH01",
+        "account_name": "IMPERIAL LOGISTICS SA GROUP PROPRIETARY",
+        "AccountType": null
+      },
+      "TotalParcelCount": 1,
+      "Address": {
+        "Addr_id": 30703861,
+        "SizweAddressId": null,
+        "Cons_id": 201581339,
+        "AddrType": 1,
+        "Name": "BRUWER MENLO PARK OOGKUNDIGES",
+        "Address1": "1234 JUSTICE MOHAMED STREET",
+        "Suburb": "MENLO PARK",
+        "Town": "PRETORIA",
+        "Postal": "81",
+        "Country": null,
+        "ContactName": null,
+        "ContactNumberCell": null,
+        "ContactNumberAlt": null,
+        "GpsLat": "-25.77161",
+        "GpsLong": "28.2548"
+      },
+      "Parcels": [
+        {
+          "ParcelID": 473799817,
+          "ConsID": 201581339,
+          "Barcode": "IHS113699187",
+          "Length": 30.6,
+          "Width": 23.3,
+          "Height": 31.7,
+          "ActualKG": 5.62,
+          "VolumizerKG": 4.52,
+          "UsedKG": 5.62,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T16:49:18.957",
+          "Refs": null
+        }
+      ],
+      "RICA": {
+        "RICA_STATUS": 0,
+        "VerificationData": []
+      },
+      "StopNumber": 7,
+      "PlannedStopArrivalTime": "2018-01-18T11:14:02",
+      "PlannedStopDepartureTime": "2018-01-18T11:29:02",
+      "PlannedStopOffloadDuration": 15,
+      "PlannedTravelDuration": 15,
+      "PlannedTravelDistance": 17.3091
+    },
+    {
+      "TripPODNo": 900093200010,
+      "ConsType": "Delivery",
+      "References": [
+        {
+          "ref_type": 1,
+          "refno": "INV231487                     ",
+          "conno": 201460054
+        },
+        {
+          "ref_type": 3,
+          "refno": "P.O.#4505529448               ",
+          "conno": 201460054
+        },
+        {
+          "ref_type": 24,
+          "refno": "3101512                       ",
+          "conno": 201460054
+        },
+        {
+          "ref_type": 28,
+          "refno": "201460054                     ",
+          "conno": 201460054
+        },
+        {
+          "ref_type": 28,
+          "refno": "1094262                       ",
+          "conno": 201460054
+        }
+      ],
+      "ConsignmentNo": "IVO1094262",
+      "ConsignmentID": 201460054,
+      "Account": {
+        "Acc_Id": 6521,
+        "AccountNo": "XCI0213",
+        "account_name": "IVODENT CC",
+        "AccountType": null
+      },
+      "TotalParcelCount": 1,
+      "Address": {
+        "Addr_id": 2707080,
+        "SizweAddressId": null,
+        "Cons_id": 201460054,
+        "AddrType": 1,
+        "Name": "DIS-CHEM BROOKLYN MALL PHARMACY",
+        "Address1": "SHOP 14 A STAND 40050 CNR FEHRSEN &amp; VEALE STREET",
+        "Suburb": "NEW MUCKLENEUK",
+        "Town": "PRETORIA",
+        "Postal": "181",
+        "Country": null,
+        "ContactName": null,
+        "ContactNumberCell": null,
+        "ContactNumberAlt": null,
+        "GpsLat": "-25.77069",
+        "GpsLong": "28.23441"
+      },
+      "Parcels": [
+        {
+          "ParcelID": 473608170,
+          "ConsID": 201460054,
+          "Barcode": "IVO10942620001",
+          "Length": 43.3,
+          "Width": 28.3,
+          "Height": 22.7,
+          "ActualKG": 5.68,
+          "VolumizerKG": 6.95,
+          "UsedKG": 6.95,
+          "VolCalculated": "Y         ",
+          "DateCreated": "2018-01-16T13:39:15.703",
+          "Refs": null
+        }
+      ],
+      "RICA": {
+        "RICA_STATUS": 0,
+        "VerificationData": []
+      },
+      "StopNumber": 8,
+      "PlannedStopArrivalTime": "2018-01-18T11:33:43",
+      "PlannedStopDepartureTime": "2018-01-18T12:57:43",
+      "PlannedStopOffloadDuration": 84,
+      "PlannedTravelDuration": 5,
+      "PlannedTravelDistance": 2.5826
+    },
+    {
+      "TripPODNo": 900093200003,
+      "ConsType": "Delivery",
+      "References": [
+        {
+          "ref_type": 1,
+          "refno": "CHAT775                       ",
+          "conno": 201488395
+        },
+        {
+          "ref_type": 4,
+          "refno": "CG1120030186                  ",
+          "conno": 201488395
+        },
+        {
+          "ref_type": 28,
+          "refno": "201488395                     ",
+          "conno": 201488395
+        },
+        {
+          "ref_type": 28,
+          "refno": "120030186                     ",
+          "conno": 201488395
+        }
+      ],
+      "ConsignmentNo": "CG1120030186",
+      "ConsignmentID": 201488395,
+      "Account": {
+        "Acc_Id": 1082,
+        "AccountNo": "C000290",
+        "account_name": "IMVULA HEALTH LOGISTICS (PTY) LTD",
+        "AccountType": null
+      },
+      "TotalParcelCount": 1,
+      "Address": {
+        "Addr_id": 45010654,
+        "SizweAddressId": null,
+        "Cons_id": 201488395,
+        "AddrType": 1,
+        "Name": "DIS-CHEM BROOKLYN",
+        "Address1": "BRONKHORST ST",
+        "Suburb": "NEW MUCKLENEUK",
+        "Town": "PRETORIA",
+        "Postal": "181",
+        "Country": null,
+        "ContactName": null,
+        "ContactNumberCell": null,
+        "ContactNumberAlt": null,
+        "GpsLat": "-25.77061",
+        "GpsLong": "28.23434"
+      },
+      "Parcels": [
+        {
+          "ParcelID": 473658029,
+          "ConsID": 201488395,
+          "Barcode": "CG11200301860001",
+          "Length": 26.1,
+          "Width": 24.8,
+          "Height": 16.2,
+          "ActualKG": 1.74,
+          "VolumizerKG": 0.01,
+          "UsedKG": 1.74,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-16T17:57:36.81",
+          "Refs": null
+        }
+      ],
+      "RICA": {
+        "RICA_STATUS": 0,
+        "VerificationData": []
+      },
+      "StopNumber": 9,
+      "PlannedStopArrivalTime": "2018-01-18T11:33:43",
+      "PlannedStopDepartureTime": "2018-01-18T12:57:43",
+      "PlannedStopOffloadDuration": 84,
+      "PlannedTravelDuration": 5,
+      "PlannedTravelDistance": 2.5826
+    },
+    {
+      "TripPODNo": 900093200005,
+      "ConsType": "Delivery",
+      "References": [
+        {
+          "ref_type": 1,
+          "refno": "9003337742                    ",
+          "conno": 201549623
+        },
+        {
+          "ref_type": 3,
+          "refno": "4505528636_HY                 ",
+          "conno": 201549623
+        },
+        {
+          "ref_type": 28,
+          "refno": "201549623                     ",
+          "conno": 201549623
+        }
+      ],
+      "ConsignmentNo": "IHS8001603579",
+      "ConsignmentID": 201549623,
+      "Account": {
+        "Acc_Id": 4431,
+        "AccountNo": "PHDWH01",
+        "account_name": "IMPERIAL LOGISTICS SA GROUP PROPRIETARY",
+        "AccountType": null
+      },
+      "TotalParcelCount": 1,
+      "Address": {
+        "Addr_id": 45010654,
+        "SizweAddressId": null,
+        "Cons_id": 201549623,
+        "AddrType": 1,
+        "Name": "DIS-CHEM BROOKLYN",
+        "Address1": "BRONKHORST ST",
+        "Suburb": "NEW MUCKLENEUK",
+        "Town": "PRETORIA",
+        "Postal": "181",
+        "Country": null,
+        "ContactName": null,
+        "ContactNumberCell": null,
+        "ContactNumberAlt": null,
+        "GpsLat": "-25.77061",
+        "GpsLong": "28.23434"
+      },
+      "Parcels": [
+        {
+          "ParcelID": 473739498,
+          "ConsID": 201549623,
+          "Barcode": "IHS113697960",
+          "Length": 29.9,
+          "Width": 24.2,
+          "Height": 31.3,
+          "ActualKG": 2.62,
+          "VolumizerKG": 4.53,
+          "UsedKG": 4.53,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T12:11:11.377",
+          "Refs": null
+        }
+      ],
+      "RICA": {
+        "RICA_STATUS": 0,
+        "VerificationData": []
+      },
+      "StopNumber": 10,
+      "PlannedStopArrivalTime": "2018-01-18T11:33:43",
+      "PlannedStopDepartureTime": "2018-01-18T12:57:43",
+      "PlannedStopOffloadDuration": 84,
+      "PlannedTravelDuration": 5,
+      "PlannedTravelDistance": 2.5826
+    },
+    {
+      "TripPODNo": 900093200002,
+      "ConsType": "Delivery",
+      "References": [
+        {
+          "ref_type": 1,
+          "refno": "INV231419                     ",
+          "conno": 201414363
+        },
+        {
+          "ref_type": 3,
+          "refno": "P.O.#4505525840               ",
+          "conno": 201414363
+        },
+        {
+          "ref_type": 24,
+          "refno": "3091889                       ",
+          "conno": 201414363
+        },
+        {
+          "ref_type": 28,
+          "refno": "201414363                     ",
+          "conno": 201414363
+        },
+        {
+          "ref_type": 28,
+          "refno": "1094215                       ",
+          "conno": 201414363
+        }
+      ],
+      "ConsignmentNo": "IVO1094215",
+      "ConsignmentID": 201414363,
+      "Account": {
+        "Acc_Id": 6521,
+        "AccountNo": "XCI0213",
+        "account_name": "IVODENT CC",
+        "AccountType": null
+      },
+      "TotalParcelCount": 1,
+      "Address": {
+        "Addr_id": 31425763,
+        "SizweAddressId": null,
+        "Cons_id": 201414363,
+        "AddrType": 1,
+        "Name": "DIS-CHEM MENLYN PARK PHARMACY",
+        "Address1": "SHOP G191  AND  1192 MENLYN SHOPPING CENTRE ATTERBURY AND LOIS AVENUE",
+        "Suburb": "MENLO PARK",
+        "Town": "PRETORIA",
+        "Postal": "102",
+        "Country": null,
+        "ContactName": null,
+        "ContactNumberCell": null,
+        "ContactNumberAlt": null,
+        "GpsLat": "-25.78415",
+        "GpsLong": "28.27369"
+      },
+      "Parcels": [
+        {
+          "ParcelID": 473550058,
+          "ConsID": 201414363,
+          "Barcode": "IVO10942150001",
+          "Length": 40.5,
+          "Width": 32.9,
+          "Height": 19.9,
+          "ActualKG": 3.48,
+          "VolumizerKG": 6.63,
+          "UsedKG": 6.63,
+          "VolCalculated": "Y         ",
+          "DateCreated": "2018-01-15T17:19:26.217",
+          "Refs": null
+        }
+      ],
+      "RICA": {
+        "RICA_STATUS": 0,
+        "VerificationData": []
+      },
+      "StopNumber": 11,
+      "PlannedStopArrivalTime": "2018-01-18T13:09:30",
+      "PlannedStopDepartureTime": "2018-01-18T13:52:30",
+      "PlannedStopOffloadDuration": 43,
+      "PlannedTravelDuration": 12,
+      "PlannedTravelDistance": 6.4396
+    },
+    {
+      "TripPODNo": 900093200006,
+      "ConsType": "Delivery",
+      "References": [
+        {
+          "ref_type": 1,
+          "refno": "9003341192                    ",
+          "conno": 201596181
+        },
+        {
+          "ref_type": 3,
+          "refno": "16012018_IF                   ",
+          "conno": 201596181
+        },
+        {
+          "ref_type": 28,
+          "refno": "201596181                     ",
+          "conno": 201596181
+        }
+      ],
+      "ConsignmentNo": "IHS8001605639",
+      "ConsignmentID": 201596181,
+      "Account": {
+        "Acc_Id": 11605,
+        "AccountNo": "PHDWH03",
+        "account_name": "IMPERIAL LOGISTICS SA GROUP PROPRIETARY",
+        "AccountType": null
+      },
+      "TotalParcelCount": 1,
+      "Address": {
+        "Addr_id": 11917296,
+        "SizweAddressId": null,
+        "Cons_id": 201596181,
+        "AddrType": 1,
+        "Name": "DE LA BAT DR R",
+        "Address1": "506 JOCHEMUS STREET",
+        "Suburb": "BAILEYS MUCKLENEUK",
+        "Town": "PRETORIA",
+        "Postal": "181",
+        "Country": null,
+        "ContactName": null,
+        "ContactNumberCell": null,
+        "ContactNumberAlt": null,
+        "GpsLat": "-25.81015",
+        "GpsLong": "28.26337"
+      },
+      "Parcels": [
+        {
+          "ParcelID": 473828447,
+          "ConsID": 201596181,
+          "Barcode": "IHS113698936",
+          "Length": 36.5,
+          "Width": 34.8,
+          "Height": 35.9,
+          "ActualKG": 4.92,
+          "VolumizerKG": 9.12,
+          "UsedKG": 9.12,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-18T02:21:05.023",
+          "Refs": null
+        }
+      ],
+      "RICA": {
+        "RICA_STATUS": 0,
+        "VerificationData": []
+      },
+      "StopNumber": 12,
+      "PlannedStopArrivalTime": "2018-01-18T14:21:53",
+      "PlannedStopDepartureTime": "2018-01-18T14:36:53",
+      "PlannedStopOffloadDuration": 15,
+      "PlannedTravelDuration": 6,
+      "PlannedTravelDistance": 3.5722
+    },
+    {
+      "TripPODNo": 900093200009,
+      "ConsType": "Delivery",
+      "References": [
+        {
+          "ref_type": 1,
+          "refno": "SRT037874                     ",
+          "conno": 201585252
+        },
+        {
+          "ref_type": 4,
+          "refno": "CG1120030181                  ",
+          "conno": 201585252
+        },
+        {
+          "ref_type": 28,
+          "refno": "201585252                     ",
+          "conno": 201585252
+        },
+        {
+          "ref_type": 31,
+          "refno": "CG1120030181                  ",
+          "conno": 201585252
+        }
+      ],
+      "ConsignmentNo": "R01CG1120030181",
+      "ConsignmentID": 201585252,
+      "Account": {
+        "Acc_Id": 1082,
+        "AccountNo": "C000290",
+        "account_name": "IMVULA HEALTH LOGISTICS (PTY) LTD",
+        "AccountType": null
+      },
+      "TotalParcelCount": 3,
+      "Address": {
+        "Addr_id": 32857743,
+        "SizweAddressId": null,
+        "Cons_id": 201585252,
+        "AddrType": 1,
+        "Name": "TASHIANCA BEAUTY SPA",
+        "Address1": "298 DUIKER AVENUE",
+        "Suburb": "ZWARTKOP",
+        "Town": "CENTURION",
+        "Postal": "51",
+        "Country": null,
+        "ContactName": null,
+        "ContactNumberCell": null,
+        "ContactNumberAlt": null,
+        "GpsLat": "-25.85663",
+        "GpsLong": "28.17683"
+      },
+      "Parcels": [
+        {
+          "ParcelID": 473809623,
+          "ConsID": 201585252,
+          "Barcode": "R01CG11200301810001",
+          "Length": 0.0,
+          "Width": 0.0,
+          "Height": 0.0,
+          "ActualKG": 2.0,
+          "VolumizerKG": 0.0,
+          "UsedKG": 2.0,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T18:10:04",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473809624,
+          "ConsID": 201585252,
+          "Barcode": "R01CG11200301810002",
+          "Length": 0.0,
+          "Width": 0.0,
+          "Height": 0.0,
+          "ActualKG": 2.0,
+          "VolumizerKG": 0.0,
+          "UsedKG": 2.0,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T18:10:05",
+          "Refs": null
+        },
+        {
+          "ParcelID": 473809625,
+          "ConsID": 201585252,
+          "Barcode": "R01CG11200301810003",
+          "Length": 0.0,
+          "Width": 0.0,
+          "Height": 0.0,
+          "ActualKG": 2.0,
+          "VolumizerKG": 0.0,
+          "UsedKG": 2.0,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-17T18:10:05",
+          "Refs": null
+        }
+      ],
+      "RICA": {
+        "RICA_STATUS": 0,
+        "VerificationData": []
+      },
+      "StopNumber": 13,
+      "PlannedStopArrivalTime": "2018-01-18T16:11:00",
+      "PlannedStopDepartureTime": "2018-01-18T16:26:00",
+      "PlannedStopOffloadDuration": 15,
+      "PlannedTravelDuration": 42,
+      "PlannedTravelDistance": 51.1667
+    },
+    {
+      "TripPODNo": 0,
+      "ConsType": "Collection",
+      "References": [],
+      "ConsignmentNo": "DMovRTT_HO_20180118",
+      "ConsignmentID": -1,
+      "Account": {
+        "Acc_Id": 0,
+        "AccountNo": null,
+        "account_name": null,
+        "AccountType": null
+      },
+      "TotalParcelCount": 0,
+      "Address": {
+        "Addr_id": 1000410236,
+        "SizweAddressId": null,
+        "Cons_id": 0,
+        "AddrType": 0,
+        "Name": "RTT Head Office",
+        "Address1": null,
+        "Suburb": null,
+        "Town": null,
+        "Postal": null,
+        "Country": null,
+        "ContactName": null,
+        "ContactNumberCell": null,
+        "ContactNumberAlt": null,
+        "GpsLat": "-26.16578",
+        "GpsLong": "28.23145"
+      },
+      "Parcels": [],
+      "RICA": {
+        "RICA_STATUS": 0,
+        "VerificationData": []
+      },
+      "StopNumber": 14,
+      "PlannedStopArrivalTime": "2018-01-18T16:36:30",
+      "PlannedStopDepartureTime": "2018-01-18T16:36:31",
+      "PlannedStopOffloadDuration": 0,
+      "PlannedTravelDuration": 0,
+      "PlannedTravelDistance": 0.0
+    },
+    {
+      "TripPODNo": 900093200004,
+      "ConsType": "Delivery",
+      "References": [
+        {
+          "ref_type": 1,
+          "refno": "9003339262                    ",
+          "conno": 201595768
+        },
+        {
+          "ref_type": 3,
+          "refno": "HF88148                       ",
+          "conno": 201595768
+        },
+        {
+          "ref_type": 28,
+          "refno": "201595768                     ",
+          "conno": 201595768
+        }
+      ],
+      "ConsignmentNo": "IHS8001607391",
+      "ConsignmentID": 201595768,
+      "Account": {
+        "Acc_Id": 4431,
+        "AccountNo": "PHDWH01",
+        "account_name": "IMPERIAL LOGISTICS SA GROUP PROPRIETARY",
+        "AccountType": null
+      },
+      "TotalParcelCount": 1,
+      "Address": {
+        "Addr_id": 30982340,
+        "SizweAddressId": null,
+        "Cons_id": 201595768,
+        "AddrType": 1,
+        "Name": "MEDIPARK MEDICAL CENTRE",
+        "Address1": "162 PANORAMA ROAD",
+        "Suburb": "CENTURION",
+        "Town": "CENTURION",
+        "Postal": "46",
+        "Country": null,
+        "ContactName": null,
+        "ContactNumberCell": null,
+        "ContactNumberAlt": null,
+        "GpsLat": "-25.89444",
+        "GpsLong": "28.1429"
+      },
+      "Parcels": [
+        {
+          "ParcelID": 473827598,
+          "ConsID": 201595768,
+          "Barcode": "IHS113703786",
+          "Length": 23.3,
+          "Width": 11.4,
+          "Height": 10.8,
+          "ActualKG": 0.12,
+          "VolumizerKG": 0.57,
+          "UsedKG": 0.57,
+          "VolCalculated": "N         ",
+          "DateCreated": "2018-01-18T00:42:38.343",
+          "Refs": null
+        }
+      ],
+      "RICA": {
+        "RICA_STATUS": 0,
+        "VerificationData": []
+      },
+      "StopNumber": 15,
+      "PlannedStopArrivalTime": "2018-01-18T16:42:02",
+      "PlannedStopDepartureTime": "2018-01-18T16:43:02",
+      "PlannedStopOffloadDuration": 1,
+      "PlannedTravelDuration": 1,
+      "PlannedTravelDistance": 1.0
+    },
+    {
+      "TripPODNo": 0,
+      "ConsType": "Depot",
+      "References": null,
+      "ConsignmentNo": null,
+      "ConsignmentID": 0,
+      "Account": null,
+      "TotalParcelCount": 0,
+      "Address": null,
+      "Parcels": null,
+      "RICA": null,
+      "StopNumber": 16,
+      "PlannedStopArrivalTime": "2018-01-18T16:36:30",
+      "PlannedStopDepartureTime": null,
+      "PlannedStopOffloadDuration": 0,
+      "PlannedTravelDuration": 10,
+      "PlannedTravelDistance": 5.0129
+    }
+  ]
+}</value>
+  </data>
+</root>

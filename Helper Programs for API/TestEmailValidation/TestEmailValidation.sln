@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestEmailValidation", "TestEmailValidation\TestEmailValidation.csproj", "{C2A518A8-E74C-44B5-B166-BFBFB02FB381}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2A518A8-E74C-44B5-B166-BFBFB02FB381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2A518A8-E74C-44B5-B166-BFBFB02FB381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2A518A8-E74C-44B5-B166-BFBFB02FB381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A518A8-E74C-44B5-B166-BFBFB02FB381}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
