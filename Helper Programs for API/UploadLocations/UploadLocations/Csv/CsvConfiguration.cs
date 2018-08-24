@@ -4,8 +4,8 @@
     {
         public CsvConfiguration()
         {
-            Delimeter = ",";
-            HasHeaders = true;
+            Delimeter = ";";
+            HasHeaders = false;
         }
 
         public string Delimeter { get; set; }

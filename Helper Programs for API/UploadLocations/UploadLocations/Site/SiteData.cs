@@ -15,12 +15,31 @@
         public string UserName { get; set; }
         public string PassWord { get; set; }
 
-        public SiteData CityLogistics()
+        public SiteData TranspharmTest()
         {
             return new SiteData
             {
-                ClientId = "350",
-                ProfileName = "CityLogistics",
+                ClientId = "452",
+                ProfileName = "Transpharm Test",
+                ClusterName = "",
+                RouteTemplateId = "",
+                DeliveryActionTypeId = "",
+                CollectionActionTypeId = "",
+                ServiceActionTypeId = "",
+                UpliftActionTypeId = "",
+                IBTActionTypeId = "",
+                CTCActionTypeId = "",
+                UserName = "",
+                PassWord = ""
+            };
+        }
+
+        public SiteData ValuLogisticsJHB()
+        {
+            return new SiteData
+            {
+                ClientId = "306",
+                ProfileName = "ValuLogisticsJHB Test",
                 ClusterName = "",
                 RouteTemplateId = "",
                 DeliveryActionTypeId = "",

@@ -1,0 +1,63 @@
+FirstName,LastName,IdNo,Email,DepartmentPosition,Mobile,HomeTel,WorkTel
+Sue-Anne,van Eck,2885,sue-anne.vaneck@builders.co.za,Front-end Manager,086 000 8925,086 000 8925,086 000 8925
+Andre ,Dreyer,2668,andre.dreyer@builders.co.za,Admin Manager,086 000 8925,086 000 8925,086 000 8925
+Mercia ,Conradie,3387,mercia.conradie@builders.co.za,Despatch Manager,086 000 8925,086 000 8925,086 000 8925
+Stanley,Potts,1101876,stanley.potts@builders.co.za,Trade Manager,086 000 8925,086 000 8925,086 000 8925
+Rene ,Rasmus,1105327,rene.rasmus@builders.co.za,Despatch Clerk,086 000 8925,086 000 8925,086 000 8925
+Bulelwa,Hlazo,6000036,bulelwa.hlazo@builders.co.za,HOD Receiving,061 336 3693,086 000 8965,086 000 8965
+Christo,Hanson,6000034,christo.hanson@builders.co.za,Updater Receiving,072 702 6593,086 000 8965,086 000 8965
+Carla,Jonkers ,6000460,carla.jonkers@builders.co.za,Admin Manager,072 085 5918,086 000 8965,086 000 8965
+Noël,Adams,6000040,noel.november@builders.co.za,Admin Manager,073 898 78 56,021 202 54 31,021 202 54 31
+Gillian,Samuels,1101750,gillian.samuels@builders.co.za,HOD Receiving,071 222 09 55,021 202 54 31,021 202 54 31
+Jean,Adams,6000657,jean.adams@builders.co.za,Updater,071 177 03 21,021 202 54 31,021 202 54 31
+Mark ,Arendse,2008233,mark.arendse@builders.co.za,Admin Manager,076 852 4825,021-9291510,021-9291510
+Neil,Herbst,1106807,neil.herbst@builders.co.za,Trade Manager,071 481 1474,021-9291506,021-9291510
+Davina,Van Niekerk,2529,deliveries.tygerberg@builders.co.za,Despatch clerk,063 696 2178,021-9291564,021-9291510
+Debbie,Polly,1106132,debbie.polly@builders.co.za,Admin Manager,044 050 0283,044 050 0283,044 050 0283
+Kevin,Dilger,6000454,Kevin.Dilger@builders.co.za,Branch Manager,044 050 0283,044 050 0283,044 050 0283
+Xzelda,Swigelaar,2008437,Xzelda.Swigelaar@builders.co.za,Dispatch Clerk,044 050 0283,044 050 0283,044 050 0283
+Jaco,Gertze,2008480,Jaco.Gertze@builders.co.za,Trade DM,044 050 0283,044 050 0283,044 050 0283
+Danwell ,Nimrod,1102116,danwell.nimrod@builders.co.zoa,Receiving HOD,0716449163,0231000270,0231000270
+Dionley,Deerling,1106164,dionley.deerling@builders.co.za,Liv/Banking clerk,0620787493,0231000270,0231000270
+Tosca,Hurter,5002953,tosca.hurter@builders.co.za,Admin Manager,0823403496,0231000270,0231000270
+Zaheera ,Rabie,4432,zaheera.rabie@builders.co.za,Trade/Despatch DM,021 840 1093,021 840 1001,021 840 1093
+Tasneem ,Ajam,270848,orders.helderberg@builders.co.za,Despatch Clerck,021 840 1042,021 840 1001,021 840 1042
+Gail ,Thomas,5075,gail.thomas@builders.co.za,Admin Manager,021 840 1005,021 840 1001,021 840 1005
+Coenraad ,Burger,1101754,Coenraad.burger@builders.co.za,Trade Manager,021 840 1007,021 840 1001,021 840 1007
+BRIAN ,BOTHA,5804,brian.botha@builders.co.za,RECEIVING HOD,0732354187,(021) 003 5026,(021) 003 5026
+NOSIPHO,MACALA,5813,nosipho.macala@builders.co.za,UPDATER,(021) 003 5027,(021) 003 5027,(021) 003 5027
+LINDSAY ,MEYER,6000798,lindsay.meyer@builders.co.za,ADMIN MANAGER,0726955259,(021) 003 5036,(021) 003 5036
+FAITH ,WILDSCHUTT,1101953,faith.wildschutt@builders.co.za,RECEIVING HOD,072 643 2737,021 201 1762,021 201 1762
+LUNGILE,TOTO,6000511,lungile.toto@builders.co.za,UPDATER ,071 348 5066,021 201 1762,021 201 1762
+CHARLENE ,JOOSTE,6000908,charlene.jooste@builders.co.za,ADMIN MANAGER ,084 489 6362,021 201 1762,021 201 1762
+Carol-Anne,Norton,6000793,carol.norton@builders.co.za,Receiving HOD,076 407 7633,021 201 1812,021 201 1812
+Mandisa ,Socenywa,6000481,mandisa.socenywa@builders.co.za,Updater,078 620 7652,021 201 1812,021 201 1812
+Beverley,Patel,2008389,beverley.patel@builders.co.za,Admin manager,079 517 2931,021 201 1812,021 201 1812
+Lance ,Day,3620,lance.day@builders.co.za,Admin Manager,021 003 2003,021 003 2003,021 003 2003
+Greswill ,Julies,3185,grewell.julies@builders.co.za,Dispatch Manager,021 003 2003,021 003 2003,021 003 2003
+Fatima,Bux,3285,fatima.bux@builders.co.za,Dispatch clerk,021 003 2003,021 003 2003,021 003 2003
+Zurayda,Jacobs,14813,zurayda.jacobs@builders.co.za,Dispatch clerk,021 003 2003,021 003 2003,021 003 2003
+Jameelah,Kasker,2310,jameelah.kasker@builders.co.za,Admin Manager,078 484 9996,021 506 1036,021 506 1005
+Nadeem ,Rahman,2269,nadeem.rahman@builders.co.za,Trade Manager,071 493 6294  ,021 506 1036,021 506 1026
+Danielle,Grever,200934,danielle.grever@builders.co.za,Dispatch Clerk,021 506 1036,021 506 1036,021 506 1036
+Roger ,Jacobs ,6000577,Roger.Jacobs@builders.co.za,Admin Manager,063 696 1939,021 201 1900,021 201 1900
+Ravi ,Chetty,5001248,Ravi.Chetty@builders.co.za,Trade/Sales Manager,082 600 6747,021 201 1900,021 201 1900
+Rafiq,Isaacs,5002527,Rafiq.Isaacs@builders.co.za,Yard HOD ,082 921 6397,021 201 1900,021 201 1900
+Leonie,Solomons,5003000,leonie.solomons@builders.co.za,Depatch Clerk,083 756 3414,021201 1900,021 201 1900
+Peter ,Julius,3000749,peter.julies@builders.co.za,HOD Yard,063 244 6218,022 100 0198,022 100 0198
+Johan ,Coetzee,3001879,johan.coetzee@builders.co.za,Dispatch Clerk,082 694 6487,022 100 0198,022 100 0198
+Johanita,Coetzee,5000144,johanita.coetzee@builders.co.za,Admin Manager,083 232 6584,022 100 0198,022 100 0198
+John,Marcus,3955,john.marcus@builders.co.za,Department Manager Yard External,084  517 9648,0215291007,021 529 1001
+Marco,Brand,2858,marco.brand@builders.co.za,Admin Manager,0723785830,0215291004,021 529 1001
+Dirk,Dippenaar,2504,dirk.dippenaar@builders.co.za,Trade Manager,082 908 9781,0215291006,021 529 1001
+Fionca ,Van Wyk,1103029,fionca.vanwyk@builders.co.za,Despatch Clerk,071 910 5165/072 784 5330,0215291033,021 529 1001
+Jestine,Hendricks,1105534,jestine.hendricks@builders.co.za,Despatch Clerk,060 326 7517,021 529 1033,021 529 1001
+Rockshaun,Claasen,8930,rockshaun.claasen@builders.co.za,Admin Manager,078 718 2407,0218683040,0218683040
+Claudia,Voss,5002597,claudia.voss@builders.co.za,Despatch Clerk,076 151 4317,0218683040,0218683040
+Eduard ,Urtel,5002660,eduard.urtell@builders.co.za,Sales Manager,082 882 7102,0218683040,0218683040
+ANTHEA,BONZE,84031 50219 085,anthea.bronze@builder.co.za,Value Site Supervisor,062 826 9314,021 931 6590,021 941 1028
+Francois ,Adonis,790904 5030 082,Value.capecity@value.co.za,Value Site Supervisor,076 030 4837,n/a,021 506 1036
+Malcolm,Schouw,660529 5169 080,malcolms@value.co.za,Value Site Supervisor,083 293 3966,,021 003 2039
+Gorgene,Bunding,801124 0031 087,Gorgeneb@value.co.za,Value Supervisor,079 100 8714,0791008714,021 840 1094
+Johannes,Fritz,800915 5158 085,johannesfr@value.co.za,Dedicated Dist relief supervisor,064 511 0247,,021 986 5000
+Irwin ,Adriaanse,610212 5138 089,value.tableview@value.co.za,Value Site Supervisor,081 494 1788 ,,021 529 1073

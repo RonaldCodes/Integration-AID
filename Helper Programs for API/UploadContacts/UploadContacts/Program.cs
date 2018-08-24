@@ -15,7 +15,7 @@ namespace UploadContacts
         static void Main(string[] args)
         { 
             var csvReader = new CsvReader();
-            var fileName = $@"Fixtures\UsersEastCluster.csv";
+            var fileName = $@"Fixtures\CuroAccessTemplate - Copy.csv";
             var content = File.ReadAllText(fileName);
             var line = csvReader.Read(content);
             var contacts = line.Where(p => p.Data != null).Select(p => new ContactLines(p)).ToList();
@@ -27,7 +27,7 @@ namespace UploadContacts
             try
             {
                 Console.WriteLine($"Uploading contacts.");
-                var site = new SiteData().BWH_Western_Region_Cluster();
+                var site = new SiteData().B_WC_Central_Cluster();
                 var contactTransformer = new ContactModelTransformer(contacts);
                 var contactModels = contactTransformer.Transform();
                 var api = CreateLogin(site.ClientId);

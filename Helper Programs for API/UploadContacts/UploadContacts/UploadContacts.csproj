@@ -159,6 +159,15 @@
     <None Include="Fixtures\ContactCenterContacts2.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Fixtures\CuroAccessTemplate - Copy.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Fixtures\CuroAccessTemplateBloemfontein.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Fixtures\CuroAccessTemplateWC_Central.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Fixtures\UsersEastCluster.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

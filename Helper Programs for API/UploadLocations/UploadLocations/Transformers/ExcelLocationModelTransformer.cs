@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using Trackmatic.Rest.Core.Model;
 using UploadLocations.Csv;
@@ -7,12 +8,12 @@ using UploadLocations.Site;
 
 namespace UploadLocations.Transformers
 {
-    class LocationModelTransformer
+    class ExcelLocationModelTransformer
     {
-        private readonly List<LocationLines> _locations;
+        private readonly List<ExcelModel> _locations;
         private readonly SiteData _site;
 
-        public LocationModelTransformer(List<LocationLines> locations, SiteData site)
+        public ExcelLocationModelTransformer(List<ExcelModel> locations, SiteData site)
         {
             _locations = locations;
             _site = site;
@@ -26,29 +27,34 @@ namespace UploadLocations.Transformers
             {
                 locationsToUpload.Add(new OLocation
                 {
-                    Id = $"{_site.ClientId}/{RemoveIllegalChars(checkNull(location.GetReference()))}".Replace(" ", string.Empty),
-                    Name = location.GetName(),
-                    Reference = location.GetReference(),
-                    //Coords = new Trackmatic.Rest.SpecializedObservableCollection<OCoord>
-                    //    {
-                    //        new OCoord
-                    //        {
-                    //            Latitude = shipto.Position?.Latitude ?? 0.0,
-                    //            Longitude = shipto.Position?.Longitude ?? 0.0,
-                    //            Radius = 100
-                    //        }
-                    //    },
-                    //Entrance = new OCoord
-                    //{
-                    //    Latitude = shipto.Position?.Latitude ?? 0.0,
-                    //    Longitude = shipto.Position?.Longitude ?? 0.0
-                    //},
-                    //Shape = EZoneShape.Radius,
+                    Id = $"{_site.ClientId}/{RemoveIllegalChars(checkNull(location.Column1))}".Replace(" ", string.Empty),
+                    Name = location.Column2,
+                    Reference = location.Column1,
+                    Coords = new Trackmatic.Rest.SpecializedObservableCollection<OCoord>
+                        {
+                            new OCoord
+                            {
+                                Latitude = Convert.ToDouble(location.Column10.Split(',')[0]),
+                                Longitude = Convert.ToDouble(location.Column10.Split(',')[1]),
+                                Radius = 100
+                            }
+                        },
+                    Entrance = new OCoord
+                    {
+                        Latitude = Convert.ToDouble(location.Column10.Split(',')[0]),
+                        Longitude = Convert.ToDouble(location.Column10.Split(',')[1])
+                    },
+                    Shape = EZoneShape.Radius,
                     ClientId = _site.ClientId,
                     IsActive = true,
                     StructuredAddress = new StructuredAddress
                     {
-                        Street = $"{location.GetAddress1()} {location.GetAddress2()} {location.GetAddress3()}",
+                        BuildingName = $"{location.Column3}",
+                        StreetNo = $"{location.Column4}",
+                        Street = $"{location.Column5}",
+                        Suburb = $"{location.Column6}",
+                        City = $"{location.Column7}",
+                        PostalCode = $"{location.Column8}"
                     }
                 });
             }

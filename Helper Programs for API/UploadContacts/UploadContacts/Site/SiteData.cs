@@ -20,17 +20,7 @@
             return new SiteData
             {
                 ClientId = "350",
-                ProfileName = "CityLogistics",
-                ClusterName = "",
-                RouteTemplateId = "",
-                DeliveryActionTypeId = "",
-                CollectionActionTypeId = "",
-                ServiceActionTypeId = "",
-                UpliftActionTypeId = "",
-                IBTActionTypeId = "",
-                CTCActionTypeId = "",
-                UserName = "",
-                PassWord = ""
+                ProfileName = "CityLogistics"
             };
         }
         public SiteData BWH_Eastern_Region_Cluster()
@@ -38,17 +28,7 @@
             return new SiteData
             {
                 ClientId = "360",
-                ProfileName = "Builders",
-                ClusterName = "BWH_Eastern_Region_Cluster",
-                RouteTemplateId = "360/858b6de0-8d83-4f0b-9c94-5e61e7bc8565",
-                DeliveryActionTypeId = "360/69a266a5-ffd0-4e9e-8f54-9a663dc688f1",
-                CollectionActionTypeId = "",
-                ServiceActionTypeId = "",
-                UpliftActionTypeId = "",
-                IBTActionTypeId = "",
-                CTCActionTypeId = "",
-                UserName = "",
-                PassWord = ""
+                ProfileName = "Builders"
             };
         }
         public SiteData BWH_Western_Region_Cluster()
@@ -56,17 +36,23 @@
             return new SiteData
             {
                 ClientId = "465",
-                ProfileName = "Builders-westcluster",
-                ClusterName = "BWH_Western_Region_Cluster",
-                RouteTemplateId = "360/858b6de0-8d83-4f0b-9c94-5e61e7bc8565",
-                DeliveryActionTypeId = "360/69a266a5-ffd0-4e9e-8f54-9a663dc688f1",
-                CollectionActionTypeId = "",
-                ServiceActionTypeId = "",
-                UpliftActionTypeId = "",
-                IBTActionTypeId = "",
-                CTCActionTypeId = "",
-                UserName = "",
-                PassWord = ""
+                ProfileName = "Builders-westcluster"
+            };
+        }
+        public SiteData BWH_Bloemfontein_Region_Cluster()
+        {
+            return new SiteData
+            {
+                ClientId = "492",
+                ProfileName = "Builders-BWH_Bloemfontein_Region_Cluster",
+            };
+        }
+        public SiteData B_WC_Central_Cluster()
+        {
+            return new SiteData
+            {
+                ClientId = "490",
+                ProfileName = "B_WC_Central_Cluster",
             };
         }
     }

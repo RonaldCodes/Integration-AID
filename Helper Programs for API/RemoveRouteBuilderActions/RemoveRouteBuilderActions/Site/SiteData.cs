@@ -25,5 +25,15 @@
                 PassWord = "!J5GrvNP"
             };
         }
+
+        public SiteData TrackmaticEastLondon()
+        {
+            return new SiteData()
+            {
+                ClientId = "454",
+                UserName = "9408065009082",
+                PassWord = "yase191!"
+            };
+        }
     }
 }

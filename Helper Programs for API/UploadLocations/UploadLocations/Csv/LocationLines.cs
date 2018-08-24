@@ -5,7 +5,7 @@ namespace UploadLocations.Csv
     public class LocationLines
     {
         private readonly Line _source;
-        private const int ExpectedLength = 8;
+        private const int ExpectedLength = 11;
 
         public LocationLines(Line source)
         {
@@ -21,56 +21,38 @@ namespace UploadLocations.Csv
             _source = source;
         }
 
-        public string GetFirstName()
+        public string GetReference()
         {
-            return _source.GetStringByIndex(Constants.FirstName);
+            return _source.GetStringByIndex(Constants.Reference);
         }
 
-        public string GetLastName()
+        public string GetName()
         {
-            return _source.GetStringByIndex(Constants.LastName);
+            return _source.GetStringByIndex(Constants.Name);
         }
 
-        public string GetIdentityNumber()
+        public string GetAddress1()
         {
-            return _source.GetStringByIndex(Constants.IdentityNumber);
+            return _source.GetStringByIndex(Constants.Address1);
         }
 
-        public string GetEmail()
+        public string GetAddress2()
         {
-            return _source.GetStringByIndex(Constants.Email);
+            return _source.GetStringByIndex(Constants.Address2);
         }
 
-        public string GetDepartmentPosition()
+        public string GetAddress3()
         {
-            return _source.GetStringByIndex(Constants.DepartmentPosition);
-        }
-
-        public string GetMobile()
-        {
-            return _source.GetStringByIndex(Constants.Mobile);
-        }
-
-        public string GetHomeTel()
-        {
-            return _source.GetStringByIndex(Constants.HomeTel);
-        }
-
-        public string GetWorkTel()
-        {
-            return _source.GetStringByIndex(Constants.WorkTel);
+            return _source.GetStringByIndex(Constants.Address3);
         }
 
         private static class Constants
         {
-            public const int FirstName = 0;
-            public const int LastName = 1;
-            public const int IdentityNumber = 2;
-            public const int Email = 3;
-            public const int DepartmentPosition = 4;
-            public const int Mobile = 5;
-            public const int HomeTel = 6;
-            public const int WorkTel = 7;
+            public const int Reference = 0;
+            public const int Name = 1;
+            public const int Address1 = 2;
+            public const int Address2 = 3;
+            public const int Address3 = 4;
         }
     }
 }
