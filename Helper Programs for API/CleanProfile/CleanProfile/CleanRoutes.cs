@@ -17,10 +17,10 @@ namespace CleanProfile
 
             foreach (var route in routes.Data)
             {
-                if (route.Reference != "")
-                {
-                    continue;
-                }
+                //if (route.Reference != "")
+                //{
+                //    continue;
+                //}
                 api.ExecuteRequest(new DeleteRouteRequest(api.Context, route.Id));
                 Console.WriteLine(route.Id);
             }

@@ -40,13 +40,13 @@ namespace UploadLocations
                         Column7 = ReadField(6),
                         Column8 = ReadField(7),
                         Column9 = ReadField(8),
-                        Column10 = ReadField(9),
+                        //Column10 = ReadField(9),
                     });
                 }
             }
             if (ContainsHeaders)
             {
-                data.RemoveRange(0, 2);
+                data.RemoveRange(0, 1);
             }
             return data;
         }

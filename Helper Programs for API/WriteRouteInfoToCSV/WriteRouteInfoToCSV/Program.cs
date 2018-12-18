@@ -11,17 +11,17 @@ namespace WriteRouteInfoToCSV
     {
         static void Main(string[] args)
         {
-            var api = Login("9408065009082", "yase191!", "422");
+            var api = Login("9408065009082", "yase191!", "568");
             var routesToRetrieve = new List<string>
             {
                 //"422/ALT06/TFR",
                 //"422/ALT05/TFR",
                 //"422/ALT04/TFR",
                 //"422/ALT02/TFR",
-                "422/FNO01N/TFR",
-                "422/FNO01N",
-                "422/FNO01/TFR",
-                "422/FNO01"
+                //"422/FNO01N/TFR",
+                //"422/FNO01N",
+                //"422/FNO01/TFR",
+                "568/TS0115285"
             };
 
            GetRouteInfo(api, routesToRetrieve);
@@ -34,7 +34,7 @@ namespace WriteRouteInfoToCSV
                 try
                 {
                     var testRoute = api.ExecuteRequest(new LoadRouteInstance(api.Context, route)).Data;
-                    WriteToTextFile(testRoute);
+                    //WriteToTextFile(testRoute);
 
                 }
                 catch (Exception e)

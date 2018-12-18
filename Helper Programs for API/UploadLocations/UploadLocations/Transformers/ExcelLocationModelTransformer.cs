@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using Trackmatic.Rest.Core.Model;
-using UploadLocations.Csv;
 using UploadLocations.Exceptions;
 using UploadLocations.Site;
 
@@ -27,29 +26,37 @@ namespace UploadLocations.Transformers
             {
                 locationsToUpload.Add(new OLocation
                 {
-                    Id = $"{_site.ClientId}/{RemoveIllegalChars(checkNull(location.Column1))}".Replace(" ", string.Empty),
-                    Name = location.Column2,
-                    Reference = location.Column1,
+                    Id = $"{_site.ClientId}/{RemoveIllegalChars(checkNull(location.Column2))}".Replace(" ", string.Empty),
+                    Name = location.Column3,
+                    Reference = location.Column2,
                     Coords = new Trackmatic.Rest.SpecializedObservableCollection<OCoord>
                         {
                             new OCoord
                             {
-                                Latitude = Convert.ToDouble(location.Column10.Split(',')[0]),
-                                Longitude = Convert.ToDouble(location.Column10.Split(',')[1]),
+                                //Latitude = !String.IsNullOrWhiteSpace(location.Column8) ? Convert.ToDouble(location.Column8.Split(',')[0]): 0.0,
+                                //Latitude = Convert.ToDouble(location.Column5),
+                                 Latitude = 0.0,
+                                //Longitude = !String.IsNullOrWhiteSpace(location.Column9) ? Convert.ToDouble(location.Column9.Split(',')[0]) : 0.0,
+                                //Longitude = Convert.ToDouble(location.Column4),
+                                 Longitude = 0.0,
                                 Radius = 100
                             }
                         },
                     Entrance = new OCoord
                     {
-                        Latitude = Convert.ToDouble(location.Column10.Split(',')[0]),
-                        Longitude = Convert.ToDouble(location.Column10.Split(',')[1])
+                       // Latitude = !String.IsNullOrWhiteSpace(location.Column8) ?Convert.ToDouble(location.Column8.Split(',')[0]): 0.0,
+                        //Latitude = Convert.ToDouble(location.Column5),
+                         Latitude = 0.0,
+                       // Longitude = !String.IsNullOrWhiteSpace(location.Column9) ? Convert.ToDouble(location.Column9.Split(',')[0]) : 0.0,
+                        //Longitude = Convert.ToDouble(location.Column4),
+                        Longitude = 0.0,
                     },
                     Shape = EZoneShape.Radius,
                     ClientId = _site.ClientId,
                     IsActive = true,
                     StructuredAddress = new StructuredAddress
                     {
-                        BuildingName = $"{location.Column3}",
+                        //BuildingName = $"{location.Column3}",
                         StreetNo = $"{location.Column4}",
                         Street = $"{location.Column5}",
                         Suburb = $"{location.Column6}",

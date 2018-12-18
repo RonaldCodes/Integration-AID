@@ -28,9 +28,9 @@ namespace UploadLocations.Transformers
             {
                 entitiesToUpload.Add(new Entity
                 {
-                    Id = $"{_site.ClientId}/entity/{RemoveIllegalChars(checkNull(location.Column1))}".Replace(" ", string.Empty),
-                    Name = location.Column2,
-                    Reference = location.Column1,
+                    Id = $"{_site.ClientId}/entity/{RemoveIllegalChars(checkNull(location.Column2))}".Replace(" ", string.Empty),
+                    Name = location.Column3,
+                    Reference = location.Column2,
                     Requirements = new ObservableCollection<EntityRequirement>
                     {
                         new RequireActionDebrief
@@ -39,10 +39,23 @@ namespace UploadLocations.Transformers
                         },
                         new RequireSignature()
                     },
-                    Decos = CreateDecoAlias(location)
+                    Decos = CreateDecoAlias(location),
+                    Tags = CreateTags(location)
                 });
             }
             return entitiesToUpload;
+        }
+
+        public ObservableCollection<EntityTag> CreateTags(ExcelModel location)
+        {
+            return new ObservableCollection<EntityTag>()
+            {
+                new EntityTag
+                {
+                     Id = $"{_site.ClientId}/{location.Column1}",
+                     Name =  $"{location.Column1}"
+                }
+            };
         }
 
         public System.Collections.ObjectModel.ObservableCollection<DecoAlias> CreateDecoAlias(ExcelModel location)
@@ -50,19 +63,24 @@ namespace UploadLocations.Transformers
             var decoAlias = new System.Collections.ObjectModel.ObservableCollection<DecoAlias>();
             decoAlias.Add( new DecoAlias
             {
-                Id = $"{_site.ClientId}/{RemoveIllegalChars(checkNull(location.Column1))}".Replace(" ", string.Empty),
-                DecoId = $"{_site.ClientId}/{RemoveIllegalChars(checkNull(location.Column1))}".Replace(" ", string.Empty),
-                DecoName = location.Column2,
-                Name = location.Column2,
-                Reference = location.Column1,
+                Id = $"{_site.ClientId}/{RemoveIllegalChars(checkNull(location.Column2))}".Replace(" ", string.Empty),
+                DecoId = $"{_site.ClientId}/{RemoveIllegalChars(checkNull(location.Column2))}".Replace(" ", string.Empty),
+                DecoName = location.Column3,
+                Name = location.Column3,
+                Reference = location.Column2,
                 Entrance = new OCoord
                 {
-                    Latitude = Convert.ToDouble(location.Column10.Split(',')[0]),
-                    Longitude = Convert.ToDouble(location.Column10.Split(',')[1])
+                    //Latitude = !String.IsNullOrWhiteSpace(location.Column8) ? Convert.ToDouble(location.Column8.Split(',')[0]) : 0.0,
+                    //Latitude = Convert.ToDouble(location.Column5),
+                    Latitude = 0.0,
+                    //Longitude = !String.IsNullOrWhiteSpace(location.Column9) ? Convert.ToDouble(location.Column9.Split(',')[0]) : 0.0,
+                    //Longitude = Convert.ToDouble(location.Column4),
+                    Longitude = 0.0,
+                    Radius = 100
                 },
                 StructuredAddress = new StructuredAddress
                 {
-                    BuildingName = $"{location.Column3}",
+                    //BuildingName = $"{location.Column3}",
                     StreetNo = $"{location.Column4}",
                     Street = $"{location.Column5}",
                     Suburb = $"{location.Column6}",

@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C7A50090-2687-4B74-B863-FD64C87542EF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ActionScheduleTester</RootNamespace>
+    <AssemblyName>ActionScheduleTester</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommLayer, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonControls, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonObjectModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CubeDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataSetConversion, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ObjectFactory, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Prompting, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ReportDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.XmlSerialize, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="Routing.ActionSchedule.Cfs">
+      <HintPath>..\..\..\..\trackmatic-reports\Routing.ActionSchedule.Cfs\obj\Debug\Routing.ActionSchedule.Cfs.dll</HintPath>
+    </Reference>
+    <Reference Include="Routing.ActionSchedule.Transpharm">
+      <HintPath>..\..\..\..\trackmatic-reports\Routing.ActionSchedule.Transpharm\obj\Debug\Routing.ActionSchedule.Transpharm.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\stdole.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tests.Routing.Common">
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\Tests.Routing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Auditing">
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\Trackmatic.Auditing.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Common">
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\Trackmatic.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Framework">
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\Trackmatic.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Framework.Cqs">
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\Trackmatic.Framework.Cqs.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Framework.Security">
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\Trackmatic.Framework.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Json, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Trackmatic.Rest.1.0.0\lib\net45\Trackmatic.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Reports.Interfaces">
+      <HintPath>..\..\..\..\trackmatic-reports\Tests.Routing.Common\bin\Debug\Trackmatic.Reports.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Rest, Version=1.0.57.760, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Trackmatic.Rest.1.0.0\lib\net45\Trackmatic.Rest.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Rest.Batch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Trackmatic.Rest.Client.1.0.187\lib\net45\Trackmatic.Rest.Batch.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Rest.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Trackmatic.Rest.Client.1.0.187\lib\net45\Trackmatic.Rest.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Rest.Core, Version=1.0.57.760, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Trackmatic.Rest.Client.1.0.187\lib\net45\Trackmatic.Rest.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Rest.Crm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Trackmatic.Rest.Client.1.0.187\lib\net45\Trackmatic.Rest.Crm.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Rest.Dashboards, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Trackmatic.Rest.Client.1.0.187\lib\net45\Trackmatic.Rest.Dashboards.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Rest.Dit, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Trackmatic.Rest.Client.1.0.187\lib\net45\Trackmatic.Rest.Dit.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Rest.Finite, Version=1.0.57.760, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Trackmatic.Rest.Client.1.0.187\lib\net45\Trackmatic.Rest.Finite.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Rest.Gatekeeper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Trackmatic.Rest.Client.1.0.187\lib\net45\Trackmatic.Rest.Gatekeeper.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Rest.Icu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Trackmatic.Rest.Client.1.0.187\lib\net45\Trackmatic.Rest.Icu.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Rest.Infinity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Trackmatic.Rest.Client.1.0.187\lib\net45\Trackmatic.Rest.Infinity.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Rest.Metadata, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Trackmatic.Rest.Client.1.0.187\lib\net45\Trackmatic.Rest.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Rest.Pbx, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Trackmatic.Rest.Client.1.0.187\lib\net45\Trackmatic.Rest.Pbx.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Rest.Planning, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Trackmatic.Rest.Client.1.0.187\lib\net45\Trackmatic.Rest.Planning.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Rest.Reporting, Version=1.0.57.760, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Trackmatic.Rest.Client.1.0.187\lib\net45\Trackmatic.Rest.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Rest.Routing, Version=1.0.57.760, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Trackmatic.Rest.Client.1.0.187\lib\net45\Trackmatic.Rest.Routing.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Rest.Security, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Trackmatic.Rest.Client.1.0.187\lib\net45\Trackmatic.Rest.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Rest.Team, Version=1.0.57.760, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Trackmatic.Rest.Client.1.0.187\lib\net45\Trackmatic.Rest.Team.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Rest.Utility, Version=1.0.57.760, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Trackmatic.Rest.Client.1.0.187\lib\net45\Trackmatic.Rest.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Rest.Vaya, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Trackmatic.Rest.Client.1.0.187\lib\net45\Trackmatic.Rest.Vaya.dll</HintPath>
+    </Reference>
+    <Reference Include="Trackmatic.Rest.Vortex, Version=1.0.57.760, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Trackmatic.Rest.Client.1.0.187\lib\net45\Trackmatic.Rest.Vortex.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Artifacts\Extensions.cs" />
+    <Compile Include="Artifacts\GisHelper.cs" />
+    <Compile Include="Model\TripActionScheduleReport.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Routing.Common\Artifacts\Extensions.cs" />
+    <Compile Include="Routing.Common\Model\CrewMember.cs" />
+    <Compile Include="Routing.Common\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="Routing.Common\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="Routing.Common\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Routing.Common\Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Routing.Common\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Routing.Common\obj\Debug\Routing.Common.csproj.CoreCompileInputs.cache" />
+    <None Include="Routing.Common\obj\Debug\Routing.Common.csprojResolveAssemblyReference.cache" />
+    <None Include="Routing.Common\packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Routing.Common\bin\Debug\Newtonsoft.Json.dll" />
+    <Content Include="Routing.Common\bin\Debug\Newtonsoft.Json.xml" />
+    <Content Include="Routing.Common\bin\Debug\Routing.Common.dll" />
+    <Content Include="Routing.Common\bin\Debug\Routing.Common.pdb" />
+    <Content Include="Routing.Common\bin\Debug\Trackmatic.Json.dll" />
+    <Content Include="Routing.Common\bin\Debug\Trackmatic.Rest.Batch.dll" />
+    <Content Include="Routing.Common\bin\Debug\Trackmatic.Rest.Client.dll" />
+    <Content Include="Routing.Common\bin\Debug\Trackmatic.Rest.Core.dll" />
+    <Content Include="Routing.Common\bin\Debug\Trackmatic.Rest.Crm.dll" />
+    <Content Include="Routing.Common\bin\Debug\Trackmatic.Rest.Dashboards.dll" />
+    <Content Include="Routing.Common\bin\Debug\Trackmatic.Rest.Dit.dll" />
+    <Content Include="Routing.Common\bin\Debug\Trackmatic.Rest.dll" />
+    <Content Include="Routing.Common\bin\Debug\Trackmatic.Rest.Finite.dll" />
+    <Content Include="Routing.Common\bin\Debug\Trackmatic.Rest.Gatekeeper.dll" />
+    <Content Include="Routing.Common\bin\Debug\Trackmatic.Rest.Icu.dll" />
+    <Content Include="Routing.Common\bin\Debug\Trackmatic.Rest.Infinity.dll" />
+    <Content Include="Routing.Common\bin\Debug\Trackmatic.Rest.Metadata.dll" />
+    <Content Include="Routing.Common\bin\Debug\Trackmatic.Rest.Pbx.dll" />
+    <Content Include="Routing.Common\bin\Debug\Trackmatic.Rest.Planning.dll" />
+    <Content Include="Routing.Common\bin\Debug\Trackmatic.Rest.Reporting.dll" />
+    <Content Include="Routing.Common\bin\Debug\Trackmatic.Rest.Routing.dll" />
+    <Content Include="Routing.Common\bin\Debug\Trackmatic.Rest.Security.dll" />
+    <Content Include="Routing.Common\bin\Debug\Trackmatic.Rest.Team.dll" />
+    <Content Include="Routing.Common\bin\Debug\Trackmatic.Rest.Utility.dll" />
+    <Content Include="Routing.Common\bin\Debug\Trackmatic.Rest.Vaya.dll" />
+    <Content Include="Routing.Common\bin\Debug\Trackmatic.Rest.Vortex.dll" />
+    <Content Include="Routing.Common\obj\Debug\Routing.Common.csproj.FileListAbsolute.txt" />
+    <Content Include="Routing.Common\obj\Debug\Routing.Common.dll" />
+    <Content Include="Routing.Common\obj\Debug\Routing.Common.pdb" />
+    <Content Include="Routing.Common\Routing.Common.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Routing.Common\obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

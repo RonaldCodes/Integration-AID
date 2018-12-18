@@ -11,8 +11,8 @@ namespace ExtractDitAddresses
     {
         static void Main(string[] args)
         {
-            var fileName = "KolokTest.csv"; //Write to a csv 
-            var api = Login("9408065009082", "yase191!", "224");
+            var fileName = "BridgestoneLocations.csv"; //Write to a csv 
+            var api = Login("9408065009082", "yase191!", "435");
             var take = 500;
             var skip2 = 1;
             var NumberOfPages = GetNumberOfPages(api, take, skip2);
@@ -55,7 +55,7 @@ namespace ExtractDitAddresses
                     var lat = location.Location.Latitude;
 
                     var contents = $"{entityReference},{entityName},{decoName},{decoShape},{lon},{lat}{Environment.NewLine}";
-                    var path = @"C:\Users\YaseenH\Desktop\Kolok2.csv";
+                    var path = @"C:\Users\YaseenH\Desktop\BridgestoneLocations.csv";
                     File.AppendAllText(path, contents);
                 }
             }

@@ -20,7 +20,10 @@ namespace CleanProfile
 
         private void DeleteDeco(Api api, OLocation deco)
         {
-            var deleteDeco = api.ExecuteRequest(new DeleteLocation(api.Context, deco.Id));
+            if (deco.Id != "301/e0ec0d4f-12c3-4648-a465-36c63399796d")
+            {
+                var deleteDeco = api.ExecuteRequest(new DeleteLocation(api.Context, deco.Id));
+            }
         }
     }
 }

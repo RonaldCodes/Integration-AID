@@ -39,5 +39,14 @@ namespace CleanProfile
                 PassWord = "yase191!"
             };
         }
+        public SiteData CFS()
+        {
+            return new SiteData()
+            {
+                Id = "568",
+                UserName = "9408065009082",
+                PassWord = "yase191!"
+            };
+        }
     }
 }

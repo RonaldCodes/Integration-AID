@@ -5,7 +5,7 @@ namespace UploadLocations.Csv
     public class LocationLines
     {
         private readonly Line _source;
-        private const int ExpectedLength = 11;
+        private const int ExpectedLength = 6;
 
         public LocationLines(Line source)
         {
